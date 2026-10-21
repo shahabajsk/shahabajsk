@@ -7,7 +7,28 @@
 [![Email](https://img.shields.io/badge/Email-shahabaj.sheikh%40gmail.com-14213d?style=flat-square&logo=gmail&logoColor=white)](mailto:shahabaj.sheikh@gmail.com)
 [![Live dashboard](https://img.shields.io/badge/Live%20demo-dispute%20triage%20console-1f7a5c?style=flat-square&logo=githubpages&logoColor=white)](https://shahabajsk.github.io/grounded-triage/)
 
-I sit between pre-sales architecture and hands-on delivery. I scope the problem with the client, build the agent, write the evals, and stay until it runs in production. Currently an AI Solutions Architect at [DevRev](https://devrev.ai), working with enterprise clients across India and APJ.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="about-dark.svg">
+        <img alt="About me as a Python class: Gurugram, AI Solutions Architect at DevRev, 14 years across airlines, banking, fintech and pricing. Engages by discovering, building, iterating until evals pass the client's gates, then shipping in shadow mode." src="about-light.svg" width="100%">
+      </picture>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/shahabajsk/grounded-triage">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="card-triage-dark.svg">
+          <img alt="grounded-triage: 36 fabrications injected, 36 caught by the verifier, 0 unverified notes shipped." src="card-triage-light.svg" width="100%">
+        </picture>
+      </a>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="card-legit-dark.svg">
+        <img alt="Legit.ai: multi-model AI platform for lawyers. Built it, sold it to paying customers, didn't raise." src="card-legit-light.svg" width="100%">
+      </picture>
+    </td>
+  </tr>
+</table>
 
 ## What I build
 
@@ -15,18 +36,21 @@ I sit between pre-sales architecture and hands-on delivery. I scope the problem 
 - **Grounding checks that don't depend on a second model.** Every value in an agent's output traced to a source record and checked in code before it reaches a customer or a case file.
 - **The parts around the model.** Discovery, success criteria written into the SOW, shadow-mode rollouts, and monitoring for when a data source goes stale.
 
-Production work so far includes customer operations agents for a large airline, a fraud investigation agent piloted at a bank, and agent workstreams for a large fintech. That code belongs to clients. The patterns are public below.
+Production work so far includes customer operations agents for a large airline, a fraud investigation agent piloted at a bank, and agent workstreams for a large fintech. That code belongs to clients. The patterns are public in [grounded-triage](https://github.com/shahabajsk/grounded-triage).
 
-## Start here: [grounded-triage](https://github.com/shahabajsk/grounded-triage)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="divider-dark.svg">
+  <img alt="" src="divider-light.svg" width="100%">
+</picture>
 
-A state-machine agent for bank card-dispute triage. Under 40% injected fabrication, the verifier catches 36 of 36 bad drafts and ships zero unverified notes. When a draft can't be fixed, the case goes to a human instead:
+## What happens when the model makes something up
+
+Under 40% injected fabrication, the verifier rejects every bad draft. When a draft can't be fixed, nothing ships and the case goes to a human:
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="terminal-dark.svg">
   <img alt="Terminal replay: three drafts fail verification, no note ships, the dispute is escalated to an analyst." src="terminal-light.svg" width="100%">
 </picture>
-
-Python agent and eval harness, a React and TypeScript console ([live](https://shahabajsk.github.io/grounded-triage/)), three ADRs, and the discovery and deployment docs I'd bring to a client.
 
 ## How I run an engagement
 
@@ -35,22 +59,13 @@ Python agent and eval harness, a React and TypeScript console ([live](https://sh
   <img alt="Discovery, build and eval, shadow, assist, automate. Each step is gated on numbers, not dates." src="phases-light.svg" width="100%">
 </picture>
 
-## Before this
-
-14 years across enterprise software, airline network planning and pricing technology, at Deloitte, TCS, IndiGo, Sabre, RPost, RateGain and now DevRev. That's most of why I know what a client's ops team will push back on.
-
-I also built **Legit.ai**, a multi-model AI platform for lawyers, and took it to paying customers. It didn't raise. The code is private; I'm happy to walk through the architecture and what I'd do differently.
-
 ## Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude%20API-191919?style=flat-square&logo=anthropic&logoColor=white)
-![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
-![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
-![LightGBM](https://img.shields.io/badge/LightGBM-forecasting-4a5873?style=flat-square)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="stack-dark.svg">
+  <img alt="Python, TypeScript, React, Node.js, Claude API, Pydantic, pytest, Vite, GitHub Actions" src="stack-light.svg" width="100%">
+</picture>
 
-<sub>The animations on this page are hand-written SVG, generated by [build_svgs.py](build_svgs.py) from real traces. No third-party widgets.</sub>
+Before LLMs: 14 years across enterprise software, airline network planning and pricing technology, at Deloitte, TCS, IndiGo, Sabre, RPost, RateGain and now DevRev.
+
+<sub>Every visual on this page is hand-written SVG, generated by [build_svgs.py](build_svgs.py) from real traces and eval numbers. No third-party widgets to break.</sub>

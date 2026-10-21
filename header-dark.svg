@@ -3,8 +3,21 @@
     <marker id="ar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#3a4a68"/></marker>
     <marker id="ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="#e6a54a"/></marker>
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+    <radialGradient id="au1" cx="0.15" cy="0.1" r="0.6">
+      <stop offset="0" stop-color="#4cc198" stop-opacity="0.28"/><stop offset="1" stop-color="#4cc198" stop-opacity="0"/>
+      <animate attributeName="cx" dur="16s" repeatCount="indefinite" values="0.15;0.55;0.15"/>
+    </radialGradient>
+    <radialGradient id="au2" cx="0.9" cy="0.0" r="0.55">
+      <stop offset="0" stop-color="#6d5dfc" stop-opacity="0.22"/><stop offset="1" stop-color="#6d5dfc" stop-opacity="0"/>
+      <animate attributeName="cx" dur="20s" repeatCount="indefinite" values="0.9;0.5;0.9"/>
+    </radialGradient>
+    <clipPath id="card"><rect width="960" height="384" rx="14"/></clipPath>
   </defs>
-  <rect width="960" height="384" rx="14" fill="#0f1726"/>
+  <g clip-path="url(#card)">
+    <rect width="960" height="384" fill="#0f1726"/>
+    <rect width="960" height="384" fill="url(#au1)"/>
+    <rect width="960" height="384" fill="url(#au2)"/>
+  </g>
 
   <text x="70" y="86" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#e6ebf3">Shahabaj Sheikh</text>
   <text x="70" y="124" font-size="19" fill="#a3b0c6">Forward-deployed AI engineer. I take agentic systems from discovery to production</text>
