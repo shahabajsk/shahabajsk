@@ -6,6 +6,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-shahabaj-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shahabaj)
 [![Email](https://img.shields.io/badge/Email-shahabaj.sheikh%40gmail.com-14213d?style=flat-square&logo=gmail&logoColor=white)](mailto:shahabaj.sheikh@gmail.com)
 [![Live dashboard](https://img.shields.io/badge/Live%20demo-dispute%20triage%20console-1f7a5c?style=flat-square&logo=githubpages&logoColor=white)](https://shahabajsk.github.io/grounded-triage/)
+[![Live demo](https://img.shields.io/badge/Live%20demo-disruption%20desk%20console-b5720b?style=flat-square&logo=githubpages&logoColor=white)](https://shahabajsk.github.io/disruption-orchestrator/)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="metrics-dark.svg">
