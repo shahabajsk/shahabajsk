@@ -1,30 +1,56 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="header-dark.svg">
-  <img alt="Shahabaj Sheikh. Forward-deployed AI engineer." src="header-light.svg" width="100%">
+  <img alt="Shahabaj Sheikh, forward-deployed AI engineer. Animated: a dispute moves through an agent's states, a fabricated amount is caught at verify, redrafted, and shipped verified." src="header-light.svg" width="100%">
 </picture>
 
-I sit between pre-sales architecture and hands-on delivery. I scope the problem with the client, build the agent, write the evals, and stay until it runs in production. 14 years across enterprise software, airline network planning and pricing technology before LLMs, which is most of why I know what a client's ops team will push back on.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-shahabaj-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shahabaj)
+[![Email](https://img.shields.io/badge/Email-shahabaj.sheikh%40gmail.com-14213d?style=flat-square&logo=gmail&logoColor=white)](mailto:shahabaj.sheikh@gmail.com)
+[![Live dashboard](https://img.shields.io/badge/Live%20demo-dispute%20triage%20console-1f7a5c?style=flat-square&logo=githubpages&logoColor=white)](https://shahabajsk.github.io/grounded-triage/)
 
-Currently an AI Solutions Architect at [DevRev](https://devrev.ai), working with enterprise clients across India and APJ. Based in Gurugram.
+I sit between pre-sales architecture and hands-on delivery. I scope the problem with the client, build the agent, write the evals, and stay until it runs in production. Currently an AI Solutions Architect at [DevRev](https://devrev.ai), working with enterprise clients across India and APJ.
 
 ## What I build
 
-- **Agentic systems with explicit control flow.** State machines with typed model outputs, so a risk team can read which step does what and the tests can prove the agent never skips one.
-- **Grounding checks that don't depend on a second model.** Every claim in an agent's output traced to a source record, checked in code, before it reaches a customer or a case file.
-- **The parts around the model.** Discovery, success criteria in the SOW, shadow-mode rollouts, monitoring for when a data source goes stale.
+- **Agents with explicit control flow.** State machines with typed model outputs, so a risk team can read which step does what, and the tests can prove the agent never skips one.
+- **Grounding checks that don't depend on a second model.** Every value in an agent's output traced to a source record and checked in code before it reaches a customer or a case file.
+- **The parts around the model.** Discovery, success criteria written into the SOW, shadow-mode rollouts, and monitoring for when a data source goes stale.
 
 Production work so far includes customer operations agents for a large airline, a fraud investigation agent piloted at a bank, and agent workstreams for a large fintech. That code belongs to clients. The patterns are public below.
 
-## Start here
+## Start here: [grounded-triage](https://github.com/shahabajsk/grounded-triage)
 
-**[grounded-triage](https://github.com/shahabajsk/grounded-triage)**: a state-machine agent for bank card-dispute triage, with a verifier that holds unverified claims shipped at zero under 40% injected fabrication. Python agent and eval harness, React and TypeScript console, ADRs, and the discovery and deployment docs I'd use at a client. [Live dashboard](https://shahabajsk.github.io/grounded-triage/).
+A state-machine agent for bank card-dispute triage. Under 40% injected fabrication, the verifier catches 36 of 36 bad drafts and ships zero unverified notes. When a draft can't be fixed, the case goes to a human instead:
 
-Earlier: I built **Legit.ai**, a multi-model AI platform for lawyers, and took it to paying customers. It didn't raise. The code is private; I'm happy to walk through the architecture and what I'd do differently.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="terminal-dark.svg">
+  <img alt="Terminal replay: three drafts fail verification, no note ships, the dispute is escalated to an analyst." src="terminal-light.svg" width="100%">
+</picture>
 
-## Tools I reach for
+Python agent and eval harness, a React and TypeScript console ([live](https://shahabajsk.github.io/grounded-triage/)), three ADRs, and the discovery and deployment docs I'd bring to a client.
 
-Python, TypeScript, React, Node.js · Claude and other LLM APIs · Pydantic, pytest · LightGBM for forecasting work · GitHub Actions
+## How I run an engagement
 
-## Contact
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="phases-dark.svg">
+  <img alt="Discovery, build and eval, shadow, assist, automate. Each step is gated on numbers, not dates." src="phases-light.svg" width="100%">
+</picture>
 
-[LinkedIn](https://www.linkedin.com/in/shahabaj) · shahabaj.sheikh@gmail.com
+## Before this
+
+14 years across enterprise software, airline network planning and pricing technology, at Deloitte, TCS, IndiGo, Sabre, RPost, RateGain and now DevRev. That's most of why I know what a client's ops team will push back on.
+
+I also built **Legit.ai**, a multi-model AI platform for lawyers, and took it to paying customers. It didn't raise. The code is private; I'm happy to walk through the architecture and what I'd do differently.
+
+## Stack
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude%20API-191919?style=flat-square&logo=anthropic&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
+![LightGBM](https://img.shields.io/badge/LightGBM-forecasting-4a5873?style=flat-square)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+<sub>The animations on this page are hand-written SVG, generated by [build_svgs.py](build_svgs.py) from real traces. No third-party widgets.</sub>

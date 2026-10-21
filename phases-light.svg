@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 160" width="960" height="160" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-label="How an engagement runs: discovery, build and eval, shadow mode, assist, then automate one category at a time. Each phase is gated on numbers.">
+  <rect width="960" height="160" rx="14" fill="#f3f5f7"/>
+  <text x="70" y="30" font-size="12.5" fill="#4a5873">How an engagement runs. Each step is gated on numbers, not dates.</text>
+  <line x1="78" y1="58" x2="734.0" y2="58" stroke="#c3ccd8" stroke-width="2"/>
+  <line x1="78" y1="58" x2="78" y2="58" stroke="#1f7a5c" stroke-width="2.5">
+    <animate attributeName="x2" dur="9.0s" repeatCount="indefinite" keyTimes="0;0.033;0.567;0.97;1" values="78;78;734.0;734.0;78"/>
+  </line>
+  
+  <g>
+    <circle cx="78.0" cy="58" r="8" fill="#ffffff" stroke="#4a5873" stroke-width="1.5">
+      <animate attributeName="fill" dur="9.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.033;0.97" values="#ffffff;#1f7a5c;#ffffff"/>
+      <animate attributeName="stroke" dur="9.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.033;0.97" values="#4a5873;#1f7a5c;#4a5873"/>
+    </circle>
+    <text x="70.0" y="98" font-size="16" font-weight="700" fill="#14213d">Discovery</text>
+    <text x="70.0" y="120" font-size="12.5" fill="#4a5873">volumes, error budgets,</text>
+    <text x="70.0" y="138" font-size="12.5" fill="#4a5873">who signs off</text>
+  </g>
+  <g>
+    <circle cx="242.0" cy="58" r="8" fill="#ffffff" stroke="#4a5873" stroke-width="1.5">
+      <animate attributeName="fill" dur="9.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.167;0.97" values="#ffffff;#1f7a5c;#ffffff"/>
+      <animate attributeName="stroke" dur="9.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.167;0.97" values="#4a5873;#1f7a5c;#4a5873"/>
+    </circle>
+    <text x="234.0" y="98" font-size="16" font-weight="700" fill="#14213d">Build + eval</text>
+    <text x="234.0" y="120" font-size="12.5" fill="#4a5873">labelled history,</text>
+    <text x="234.0" y="138" font-size="12.5" fill="#4a5873">gates written in the SOW</text>
+  </g>
+  <g>
+    <circle cx="406.0" cy="58" r="8" fill="#ffffff" stroke="#4a5873" stroke-width="1.5">
+      <animate attributeName="fill" dur="9.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.300;0.97" values="#ffffff;#1f7a5c;#ffffff"/>
+      <animate attributeName="stroke" dur="9.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.300;0.97" values="#4a5873;#1f7a5c;#4a5873"/>
+    </circle>
+    <text x="398.0" y="98" font-size="16" font-weight="700" fill="#14213d">Shadow</text>
+    <text x="398.0" y="120" font-size="12.5" fill="#4a5873">runs on live cases,</text>
+    <text x="398.0" y="138" font-size="12.5" fill="#4a5873">analysts don't see it</text>
+  </g>
+  <g>
+    <circle cx="570.0" cy="58" r="8" fill="#ffffff" stroke="#4a5873" stroke-width="1.5">
+      <animate attributeName="fill" dur="9.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.433;0.97" values="#ffffff;#1f7a5c;#ffffff"/>
+      <animate attributeName="stroke" dur="9.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.433;0.97" values="#4a5873;#1f7a5c;#4a5873"/>
+    </circle>
+    <text x="562.0" y="98" font-size="16" font-weight="700" fill="#14213d">Assist</text>
+    <text x="562.0" y="120" font-size="12.5" fill="#4a5873">analysts accept,</text>
+    <text x="562.0" y="138" font-size="12.5" fill="#4a5873">edit or override</text>
+  </g>
+  <g>
+    <circle cx="734.0" cy="58" r="8" fill="#ffffff" stroke="#4a5873" stroke-width="1.5">
+      <animate attributeName="fill" dur="9.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.567;0.97" values="#ffffff;#1f7a5c;#ffffff"/>
+      <animate attributeName="stroke" dur="9.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;0.567;0.97" values="#4a5873;#1f7a5c;#4a5873"/>
+    </circle>
+    <text x="726.0" y="98" font-size="16" font-weight="700" fill="#14213d">Automate</text>
+    <text x="726.0" y="120" font-size="12.5" fill="#4a5873">one category</text>
+    <text x="726.0" y="138" font-size="12.5" fill="#4a5873">at a time</text>
+  </g>
+</svg>
