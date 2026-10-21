@@ -73,8 +73,7 @@
     <circle cx="636" cy="59.0" r="16" fill="#6ea2ff"/>
     <text x="636" y="65.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">A</text>
     <text x="664" y="41.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#a3b0c6">AIRLINE</text>
-    <text x="664" y="67.0" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#6ea2ff">21</text>
-    <text x="701" y="66.0" font-size="13" font-weight="700" fill="#e6ebf3">skills, 14 states, one orchestrator</text>
+    <text x="664" y="67.0"><tspan font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#6ea2ff">21</tspan><tspan dx="8" font-size="13" font-weight="700" fill="#e6ebf3">skills, 14 states, one orchestrator</tspan></text>
     <text x="664" y="86.0" font-size="12" fill="#a3b0c6">Runs customer ops end to end. I own delivery.</text>
   </g>
   <path d="M476.0 434.0 L476.0 255.0 L588.0 143.0 L604.0 143.0" fill="none" stroke="#4cc198" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="353.4 383.4" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.4029;0.5029;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="368.4;368.4;0;0"/></path>
@@ -84,8 +83,7 @@
     <circle cx="636" cy="143.0" r="16" fill="#4cc198"/>
     <text x="636" y="149.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">B</text>
     <text x="664" y="125.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#a3b0c6">BANKING</text>
-    <text x="664" y="151.0" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#4cc198">0</text>
-    <text x="686" y="150.0" font-size="13" font-weight="700" fill="#e6ebf3">fabrications, thousands of txns</text>
+    <text x="664" y="151.0"><tspan font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#4cc198">0</tspan><tspan dx="8" font-size="13" font-weight="700" fill="#e6ebf3">fabrications, thousands of txns</tspan></text>
     <text x="664" y="170.0" font-size="12" fill="#a3b0c6">Every finding cites its record. 46/50 adv. QA.</text>
   </g>
   <path d="M500.0 434.0 L500.0 315.0 L588.0 227.0 L604.0 227.0" fill="none" stroke="#a497ff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="259.5 289.5" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.4486;0.5486;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="274.5;274.5;0;0"/></path>
@@ -95,8 +93,7 @@
     <circle cx="636" cy="227.0" r="16" fill="#a497ff"/>
     <text x="636" y="233.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">F</text>
     <text x="664" y="209.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#a3b0c6">FINTECH</text>
-    <text x="664" y="235.0" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#a497ff">1</text>
-    <text x="686" y="234.0" font-size="13" font-weight="700" fill="#e6ebf3">platform for IT, HR, finance, promo</text>
+    <text x="664" y="235.0"><tspan font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#a497ff">1</tspan><tspan dx="8" font-size="13" font-weight="700" fill="#e6ebf3">platform for IT, HR, finance, promo</tspan></text>
     <text x="664" y="254.0" font-size="12" fill="#a3b0c6">Policy decides. Humans keep the other calls.</text>
   </g>
   <path d="M524.0 434.0 L524.0 375.0 L588.0 311.0 L604.0 311.0" fill="none" stroke="#f0a64a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="165.5 195.5" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.4943;0.5943;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="180.5;180.5;0;0"/></path>
@@ -106,8 +103,7 @@
     <circle cx="636" cy="311.0" r="16" fill="#f0a64a"/>
     <text x="636" y="317.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">C</text>
     <text x="664" y="293.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#a3b0c6">CONSUMER GOODS</text>
-    <text x="664" y="319.0" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#f0a64a">4</text>
-    <text x="686" y="318.0" font-size="13" font-weight="700" fill="#e6ebf3">AI workflows in the field</text>
+    <text x="664" y="319.0"><tspan font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#f0a64a">4</tspan><tspan dx="8" font-size="13" font-weight="700" fill="#e6ebf3">AI workflows in the field</tspan></text>
     <text x="664" y="338.0" font-size="12" fill="#a3b0c6">Vendor share, beat plans, GST cost, routes.</text>
   </g>
   <path d="M548.0 434.0 L548.0 435.0 L588.0 395.0 L604.0 395.0" fill="none" stroke="#f27db6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="73.6 103.6" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.5400;0.6400;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="88.6;88.6;0;0"/></path>
@@ -117,8 +113,7 @@
     <circle cx="636" cy="395.0" r="16" fill="#f27db6"/>
     <text x="636" y="401.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">M</text>
     <text x="664" y="377.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#a3b0c6">AUTOMOTIVE</text>
-    <text x="664" y="403.0" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#f27db6">LightGBM</text>
-    <text x="792" y="402.0" font-size="13" font-weight="700" fill="#e6ebf3">demand forecasting</text>
+    <text x="664" y="403.0"><tspan font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#f27db6">LightGBM</tspan><tspan dx="8" font-size="13" font-weight="700" fill="#e6ebf3">demand forecasting</tspan></text>
     <text x="664" y="422.0" font-size="12" fill="#a3b0c6">Taken through staged delivery.</text>
   </g>
   <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.3000;0.3571;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.3000;0.3571;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 0;0 0;0 0;0 0"/>

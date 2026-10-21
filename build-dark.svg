@@ -2,7 +2,7 @@
   <rect width="960" height="436" rx="14" fill="#0f1726"/>
   <rect x="24" y="16" width="294" height="404" rx="14" fill="#162033" stroke="#3a4a68"/>
   <text x="44" y="48" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#6ea2ff">01</text>
-  <text x="72" y="48" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="700" fill="#e6ebf3">The model can't skip a step</text>
+  <text x="72" y="48" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#e6ebf3">Steps can't be skipped</text>
   <rect x="36" y="64" width="270" height="262" rx="10" fill="#0f1726"/>
   <text x="44" y="350" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#a3b0c6">machine.py · TRANSITIONS, ALLOWED</text>
   <text x="44" y="378" font-size="15" font-weight="800" fill="#4cc198">0 out-of-policy payments</text>
@@ -29,7 +29,7 @@
   </g>
   <rect x="333" y="16" width="294" height="404" rx="14" fill="#162033" stroke="#3a4a68"/>
   <text x="353" y="48" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#4cc198">02</text>
-  <text x="381" y="48" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="700" fill="#e6ebf3">Every value matches a record</text>
+  <text x="381" y="48" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#e6ebf3">Values must match records</text>
   <rect x="345" y="64" width="270" height="262" rx="10" fill="#0f1726"/>
   <text x="353" y="350" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#a3b0c6">model.py · ungrounded()</text>
   <text x="353" y="378" font-size="15" font-weight="800" fill="#4cc198">62 bad drafts caught, 0 sent</text>
@@ -65,10 +65,10 @@
     <rect x="485" y="262" width="104" height="28" rx="14" fill="#4cc198"/>
     <text x="537" y="281" text-anchor="middle" font-size="12.5" font-weight="800" fill="#162033">✓ sent</text>
   </g>
-  <defs><marker id="ia-f0806f" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4L0 8z" fill="#f0806f"/></marker><marker id="ia-4cc198" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4L0 8z" fill="#4cc198"/></marker><marker id="ia-e6a54a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4L0 8z" fill="#e6a54a"/></marker><marker id="ia-a3b0c6" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4L0 8z" fill="#a3b0c6"/></marker></defs>
+  <defs><marker id="ia-f0806f" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4L0 8z" fill="#f0806f"/></marker><marker id="ia-a3b0c6" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4L0 8z" fill="#a3b0c6"/></marker><marker id="ia-4cc198" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4L0 8z" fill="#4cc198"/></marker><marker id="ia-e6a54a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4L0 8z" fill="#e6a54a"/></marker></defs>
   <rect x="642" y="16" width="294" height="404" rx="14" fill="#162033" stroke="#3a4a68"/>
   <text x="662" y="48" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#a497ff">03</text>
-  <text x="690" y="48" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="700" fill="#e6ebf3">Retries never double-pay</text>
+  <text x="690" y="48" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-weight="700" fill="#e6ebf3">Retries never double-pay</text>
   <rect x="654" y="64" width="270" height="262" rx="10" fill="#0f1726"/>
   <text x="662" y="350" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="11.5" fill="#a3b0c6">systems.py · Payments.refund</text>
   <text x="662" y="378" font-size="15" font-weight="800" fill="#4cc198">0 duplicate payments</text>
