@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" width="560" height="200" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-label="grounded-triage: State-machine agent for bank card-dispute triage">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" width="560" height="200" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-label="grounded-triage: Bank card-dispute triage with a zero-fabrication verifier">
   <rect x="0.5" y="0.5" width="559" height="199" rx="12" fill="#ffffff" stroke="#c3ccd8"/>
   <rect x="0.5" y="0.5" width="6" height="199" rx="3" fill="#1f7a5c"/>
   <text x="24" y="40" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" fill="#14213d">grounded-triage</text>
-  <text x="24" y="64" font-size="13.5" fill="#4a5873">State-machine agent for bank card-dispute triage</text>
+  <text x="24" y="64" font-size="13.5" fill="#4a5873">Bank card-dispute triage with a zero-fabrication verifier</text>
   
   <text x="24" y="103" font-size="12.5" fill="#4a5873">fabrications injected</text>
   <rect x="200" y="92" width="300" height="14" rx="7" fill="#e3ecf5"/>
