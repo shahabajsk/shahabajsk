@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-label="Highlights as a transit map. A grey line runs from 2011 through Deloitte, TCS, airline planning, Sabre, RPost and RateGain into a DevRev interchange, now Forward Deployed Engineer and AI Solution Architect. Coloured lines leave DevRev for five production boards. Airline: 21 skills, 14 states, one orchestrator that runs customer ops end to end; I own delivery. Banking: 0 fabrications across thousands of transactions, every finding cites its record, 46 of 50 adversarial QA cases passed. Fintech: one platform for IT, HR, finance and promo; policy decides, humans keep the other calls. Consumer goods: 4 AI workflows for vendor share, beat plans, GST cost and routes. Automotive: LightGBM demand forecasting taken through staged delivery. Also: founded Legit.ai, multi-model AI for lawyers, sold to paying customers; spoke on 'Who Owns the Outcome?'.">
+  <defs>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1" fill="#3a4a68" opacity="0.45"/></pattern>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.12"/></filter>
+  </defs>
+  <rect width="960" height="560" rx="14" fill="#0f1726"/>
+  <rect width="960" height="560" rx="14" fill="url(#dots)"/>
+  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.0000;0.0714;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.0000;0.0714;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 10;0 10;0 0;0 0"/>
+    <rect x="40" y="30" width="206" height="26" rx="4" fill="#f5c400"/>
+    <text x="52" y="48" font-size="13" font-weight="800" letter-spacing="1.6" fill="#14213d">HIGHLIGHTS · LINE MAP</text>
+    <text x="40" y="100" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#e6ebf3">Fourteen years, one line.</text>
+    <text x="40" y="128" font-size="15" fill="#a3b0c6">Grey stops: enterprise software before LLMs.</text>
+    <text x="40" y="148" font-size="15" fill="#a3b0c6">Coloured lines: production AI, live with clients.</text>
+  </g>
+  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.0714;0.1429;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.0714;0.1429;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="-14 0;-14 0;0 0;0 0"/>
+    <rect x="40" y="178" width="370" height="86" rx="10" fill="#162033" stroke="#3a4a68" filter="url(#soft)"/>
+    <rect x="40" y="178" width="6" height="86" rx="3" fill="#3cc7d3"/>
+    <circle cx="80" cy="221" r="20" fill="#3cc7d3"/>
+    <g transform="translate(68 209)" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h11M6 17l4-4M9 6l6 6M12 3l6 6M10 8l4-4 6 6-4 4z"/></g>
+    <rect x="112" y="192" width="71.39999999999999" height="18" rx="9" fill="#3cc7d3" fill-opacity="0.16"/>
+    <text x="119" y="205" font-size="10.5" font-weight="800" letter-spacing="1.2" fill="#3cc7d3">FOUNDED</text>
+    <text x="112" y="232" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700" fill="#e6ebf3">Legit.ai</text>
+    <text x="112" y="251" font-size="12.5" fill="#a3b0c6">Multi-model AI for lawyers. Paying customers.</text>
+  </g>
+  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.1143;0.1857;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.1143;0.1857;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="-14 0;-14 0;0 0;0 0"/>
+    <rect x="40" y="280" width="370" height="86" rx="10" fill="#162033" stroke="#3a4a68" filter="url(#soft)"/>
+    <rect x="40" y="280" width="6" height="86" rx="3" fill="#e6a54a"/>
+    <circle cx="80" cy="323" r="20" fill="#e6a54a"/>
+    <g transform="translate(68 311)" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="1" width="8" height="13" rx="4"/><path d="M4 11a8 8 0 0 0 16 0M12 19v4M8 23h8"/></g>
+    <rect x="112" y="294" width="55.0" height="18" rx="9" fill="#e6a54a" fill-opacity="0.16"/>
+    <text x="119" y="307" font-size="10.5" font-weight="800" letter-spacing="1.2" fill="#e6a54a">SPOKE</text>
+    <text x="112" y="334" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700" fill="#e6ebf3">Who Owns the Outcome?</text>
+    <text x="112" y="353" font-size="12.5" fill="#a3b0c6">Leading when your newest teammate is an AI.</text>
+  </g>
+  <g font-size="12" fill="#a3b0c6"><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.1429;0.2143;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.1429;0.2143;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 10;0 10;0 0;0 0"/>
+    <line x1="40" y1="410" x2="70" y2="410" stroke="#5d6b84" stroke-width="8" stroke-linecap="round"/>
+    <text x="80" y="414">before LLMs</text>
+    <line x1="170" y1="410" x2="200" y2="410" stroke="#6ea2ff" stroke-width="8" stroke-linecap="round"/>
+    <text x="210" y="414">production AI</text>
+    <rect x="310" y="402" width="30" height="16" rx="8" fill="#e6ebf3"/>
+    <text x="350" y="414">interchange</text>
+  </g>
+  <path d="M40.0 500.0 L470.0 500.0 L500.0 470.0 L500.0 466.0" fill="none" stroke="#5d6b84" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="476.4 506.4" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.0286;0.3143;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="491.4;491.4;0;0"/></path>
+  <text x="40" y="484" font-size="11" font-weight="700" letter-spacing="1" fill="#a3b0c6">2011</text>
+  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.0485;0.0842;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.0485;0.0842;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 0;0 0;0 0;0 0"/>
+    <circle cx="70" cy="500" r="7" fill="#162033" stroke="#e6ebf3" stroke-width="3"/>
+    <text x="70" y="528" text-anchor="middle" font-size="12.5" font-weight="600" fill="#a3b0c6">Deloitte</text>
+  </g>
+  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.0950;0.1307;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.0950;0.1307;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 0;0 0;0 0;0 0"/>
+    <circle cx="140" cy="500" r="7" fill="#162033" stroke="#e6ebf3" stroke-width="3"/>
+    <text x="140" y="528" text-anchor="middle" font-size="12.5" font-weight="600" fill="#a3b0c6">TCS</text>
+  </g>
+  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.1548;0.1905;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.1548;0.1905;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 0;0 0;0 0;0 0"/>
+    <circle cx="230" cy="500" r="7" fill="#162033" stroke="#e6ebf3" stroke-width="3"/>
+    <text x="230" y="528" text-anchor="middle" font-size="12.5" font-weight="600" fill="#a3b0c6">Airline planning</text>
+  </g>
+  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.2133;0.2490;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.2133;0.2490;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 0;0 0;0 0;0 0"/>
+    <circle cx="318" cy="500" r="7" fill="#162033" stroke="#e6ebf3" stroke-width="3"/>
+    <text x="318" y="528" text-anchor="middle" font-size="12.5" font-weight="600" fill="#a3b0c6">Sabre</text>
+  </g>
+  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.2571;0.2929;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.2571;0.2929;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 0;0 0;0 0;0 0"/>
+    <circle cx="384" cy="500" r="7" fill="#162033" stroke="#e6ebf3" stroke-width="3"/>
+    <text x="384" y="528" text-anchor="middle" font-size="12.5" font-weight="600" fill="#a3b0c6">RPost</text>
+  </g>
+  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.3023;0.3380;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.3023;0.3380;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 0;0 0;0 0;0 0"/>
+    <circle cx="452" cy="500" r="7" fill="#162033" stroke="#e6ebf3" stroke-width="3"/>
+    <text x="452" y="528" text-anchor="middle" font-size="12.5" font-weight="600" fill="#a3b0c6">RateGain</text>
+  </g>
+  <path d="M452.0 434.0 L452.0 195.0 L588.0 59.0 L604.0 59.0" fill="none" stroke="#6ea2ff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="447.3 477.3" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.3571;0.4571;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="462.3;462.3;0;0"/></path>
+  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.4429;0.5071;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.4429;0.5071;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="16 0;16 0;0 0;0 0"/>
+    <rect x="604" y="22.0" width="332" height="74" rx="10" fill="#162033" stroke="#3a4a68" filter="url(#soft)"/>
+    <rect x="604" y="22.0" width="6" height="74" rx="3" fill="#6ea2ff"/>
+    <circle cx="636" cy="59.0" r="16" fill="#6ea2ff"/>
+    <text x="636" y="65.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">A</text>
+    <text x="664" y="41.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#a3b0c6">AIRLINE</text>
+    <text x="664" y="67.0" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#6ea2ff">21</text>
+    <text x="701" y="66.0" font-size="13" font-weight="700" fill="#e6ebf3">skills, 14 states, one orchestrator</text>
+    <text x="664" y="86.0" font-size="12" fill="#a3b0c6">Runs customer ops end to end. I own delivery.</text>
+  </g>
+  <path d="M476.0 434.0 L476.0 255.0 L588.0 143.0 L604.0 143.0" fill="none" stroke="#4cc198" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="353.4 383.4" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.4029;0.5029;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="368.4;368.4;0;0"/></path>
+  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.4886;0.5529;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.4886;0.5529;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="16 0;16 0;0 0;0 0"/>
+    <rect x="604" y="106.0" width="332" height="74" rx="10" fill="#162033" stroke="#3a4a68" filter="url(#soft)"/>
+    <rect x="604" y="106.0" width="6" height="74" rx="3" fill="#4cc198"/>
+    <circle cx="636" cy="143.0" r="16" fill="#4cc198"/>
+    <text x="636" y="149.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">B</text>
+    <text x="664" y="125.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#a3b0c6">BANKING</text>
+    <text x="664" y="151.0" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#4cc198">0</text>
+    <text x="686" y="150.0" font-size="13" font-weight="700" fill="#e6ebf3">fabrications, thousands of txns</text>
+    <text x="664" y="170.0" font-size="12" fill="#a3b0c6">Every finding cites its record. 46/50 adv. QA.</text>
+  </g>
+  <path d="M500.0 434.0 L500.0 315.0 L588.0 227.0 L604.0 227.0" fill="none" stroke="#a497ff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="259.5 289.5" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.4486;0.5486;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="274.5;274.5;0;0"/></path>
+  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.5343;0.5986;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.5343;0.5986;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="16 0;16 0;0 0;0 0"/>
+    <rect x="604" y="190.0" width="332" height="74" rx="10" fill="#162033" stroke="#3a4a68" filter="url(#soft)"/>
+    <rect x="604" y="190.0" width="6" height="74" rx="3" fill="#a497ff"/>
+    <circle cx="636" cy="227.0" r="16" fill="#a497ff"/>
+    <text x="636" y="233.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">F</text>
+    <text x="664" y="209.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#a3b0c6">FINTECH</text>
+    <text x="664" y="235.0" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#a497ff">1</text>
+    <text x="686" y="234.0" font-size="13" font-weight="700" fill="#e6ebf3">platform for IT, HR, finance, promo</text>
+    <text x="664" y="254.0" font-size="12" fill="#a3b0c6">Policy decides. Humans keep the other calls.</text>
+  </g>
+  <path d="M524.0 434.0 L524.0 375.0 L588.0 311.0 L604.0 311.0" fill="none" stroke="#f0a64a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="165.5 195.5" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.4943;0.5943;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="180.5;180.5;0;0"/></path>
+  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.5800;0.6443;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.5800;0.6443;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="16 0;16 0;0 0;0 0"/>
+    <rect x="604" y="274.0" width="332" height="74" rx="10" fill="#162033" stroke="#3a4a68" filter="url(#soft)"/>
+    <rect x="604" y="274.0" width="6" height="74" rx="3" fill="#f0a64a"/>
+    <circle cx="636" cy="311.0" r="16" fill="#f0a64a"/>
+    <text x="636" y="317.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">C</text>
+    <text x="664" y="293.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#a3b0c6">CONSUMER GOODS</text>
+    <text x="664" y="319.0" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#f0a64a">4</text>
+    <text x="686" y="318.0" font-size="13" font-weight="700" fill="#e6ebf3">AI workflows in the field</text>
+    <text x="664" y="338.0" font-size="12" fill="#a3b0c6">Vendor share, beat plans, GST cost, routes.</text>
+  </g>
+  <path d="M548.0 434.0 L548.0 435.0 L588.0 395.0 L604.0 395.0" fill="none" stroke="#f27db6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="73.6 103.6" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.5400;0.6400;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="88.6;88.6;0;0"/></path>
+  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.6257;0.6900;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.6257;0.6900;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="16 0;16 0;0 0;0 0"/>
+    <rect x="604" y="358.0" width="332" height="74" rx="10" fill="#162033" stroke="#3a4a68" filter="url(#soft)"/>
+    <rect x="604" y="358.0" width="6" height="74" rx="3" fill="#f27db6"/>
+    <circle cx="636" cy="395.0" r="16" fill="#f27db6"/>
+    <text x="636" y="401.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">M</text>
+    <text x="664" y="377.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#a3b0c6">AUTOMOTIVE</text>
+    <text x="664" y="403.0" font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#f27db6">LightGBM</text>
+    <text x="792" y="402.0" font-size="13" font-weight="700" fill="#e6ebf3">demand forecasting</text>
+    <text x="664" y="422.0" font-size="12" fill="#a3b0c6">Taken through staged delivery.</text>
+  </g>
+  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.3000;0.3571;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.3000;0.3571;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 0;0 0;0 0;0 0"/>
+    <rect x="440" y="432" width="120" height="34" rx="17" fill="none" stroke="#f5c400" stroke-width="3" opacity="0">
+      <animate attributeName="opacity" dur="2.4s" begin="0s" repeatCount="indefinite" values="0.9;0;0.9"/>
+      <animate attributeName="stroke-width" dur="2.4s" begin="0s" repeatCount="indefinite" values="3;14;3"/>
+    </rect>
+    <rect x="440" y="432" width="120" height="34" rx="17" fill="#e6ebf3"/>
+    <text x="500.0" y="455" text-anchor="middle" font-size="16" font-weight="800" fill="#0f1726">DevRev</text>
+    <text x="574" y="446" font-size="11" font-weight="800" letter-spacing="1.2" fill="#a3b0c6">NOW</text>
+    <text x="574" y="463" font-size="13" font-weight="600" fill="#e6ebf3">Forward Deployed Engineer &amp; AI Solution Architect</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.0286;0.0386;0.3286;0.3686;1" values="0;0;1;1;0;0"/>
+    <animateMotion dur="7.0s" fill="freeze" rotate="auto" calcMode="linear" keyTimes="0;0.0286;0.3286;1" keyPoints="0;0;1;1" path="M40.0 500.0 L470.0 500.0 L500.0 470.0 L500.0 466.0"/>
+    <rect x="-16" y="-8" width="32" height="16" rx="6" fill="#f5c400" stroke="#14213d" stroke-width="1.5"/>
+    <rect x="-10" y="-4" width="6" height="5" rx="1" fill="#14213d"/><rect x="-1" y="-4" width="6" height="5" rx="1" fill="#14213d"/>
+    <rect x="8" y="-4" width="5" height="5" rx="1" fill="#14213d"/>
+  </g>
+</svg>

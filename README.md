@@ -49,6 +49,14 @@ Production-grade AI systems in airline, banking, fintech, consumer goods, automo
 
 ## Highlights
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="highlights-dark.svg">
+  <img alt="Highlights as a transit map. A grey line runs from 2011 through Deloitte, TCS, airline planning, Sabre, RPost and RateGain into DevRev, where coloured lines lead to five production boards: airline, 21 skills across a 14-state orchestrator; banking, 0 fabrications across thousands of transactions; fintech, one platform for IT, HR, finance and promo; consumer goods, 4 AI workflows; automotive, LightGBM demand forecasting. Also founded Legit.ai and spoke on Who Owns the Outcome?" src="highlights-light.svg" width="100%">
+</picture>
+
+<details>
+<summary><b>Read the highlights as text</b></summary>
+
 - **Airline.** Architected and own delivery of a deterministic 14-state orchestrator that runs customer operations end to end. It coordinates 21 skills across CRM, reservations, payments and messaging, and every transition is explicit and testable. Adoption peaked, and the airline consolidated its resolution work on the platform.
 - **Banking.** Built a fraud investigation system where every finding cites the transaction record it came from, and deterministic verification blocks anything uncited. Under adversarial QA it passed 46 of 50 cases, with zero fabrications across thousands of transactions.
 - **Fintech.** Designed service-operations automation for IT, HR, finance and promo workflows on one platform of record. Automation acts where policy already decides the outcome; every other approval stays with a human.
@@ -57,11 +65,52 @@ Production-grade AI systems in airline, banking, fintech, consumer goods, automo
 - **Founder.** Built Legit.ai, a multi-model AI platform for lawyers, and sold it to paying customers.
 - **Speaking.** Ran "Who Owns the Outcome? Leading When Your Newest Team Member Is an AI" for RateGain's NorthStar 2.0 first-manager programme.
 
+</details>
+
 ## What I build
 
-- **Agents with explicit control flow.** State machines with typed model outputs, so a risk team can read which step does what, and the tests can prove the agent never skips one.
-- **Grounding checks that don't depend on a second model.** Every value in an agent's output traced to a source record and checked in code before it reaches a customer or a case file.
-- **The parts around the model.** Discovery, success criteria written into the SOW, shadow-mode rollouts, and monitoring for when a data source goes stale.
+Agents that a risk team can read and a test suite can hold to account. Each panel replays a real trace from [disruption-orchestrator](https://github.com/shahabajsk/disruption-orchestrator); the numbers come from its eval of 98 contacts.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="build-dark.svg">
+  <img alt="Three looping panels. 01: a prompt injection demanding a 99,999 rupee refund reaches read choice, where only a voucher was offered, so it goes to a human; 0 out-of-policy payments. 02: a draft says flight ZZ369 but the case facts say ZZ396, so it is blocked, redrafted from facts and sent; 62 bad drafts caught, 0 sent. 03: a refund commits, the response times out, the retry carries the same idempotency key and gets the same payment back; 0 duplicate payments." src="build-light.svg" width="100%">
+</picture>
+
+<details>
+<summary><b>See the code behind each panel</b></summary>
+
+**01 · Each state allowlists its skills.** A refund can only run in the refund state.
+
+```python
+def run(self, skill_name: str, allowed: frozenset[str], fn: Callable[[], object]) -> object:
+    if skill_name not in allowed:
+        raise SkillNotAllowed(skill_name)
+```
+
+**02 · Flight codes and amounts in an outbound message must come from the case facts.**
+
+```python
+def ungrounded(body: str, facts: dict) -> list[str]:
+    known = {str(v) for v in facts.values()} | {f"{v:,}" for v in facts.values() if isinstance(v, int)}
+    issues = [f for f in FLIGHT.findall(body) if f not in known]
+    issues += [a for a in AMOUNT.findall(body) if a not in known and a.replace(",", "") not in known]
+    return issues
+```
+
+**03 · A retried refund with the same key returns the first result.**
+
+```python
+def refund(self, idempotency_key: str, pnr: str, amount: int) -> Payment:
+    if idempotency_key in self.ledger:
+        return self.ledger[idempotency_key]
+    self.faults.check("pay.refund")
+    p = Payment(id=f"PAY-{len(self.ledger) + 1:04d}", pnr=pnr, amount=amount, kind="refund")
+    self.ledger[idempotency_key] = p
+    self.faults.after_commit("pay.refund")  # test hook: commit, then time out
+    return p
+```
+
+</details>
 
 Client code belongs to clients. The patterns are public: [disruption-orchestrator](https://github.com/shahabajsk/disruption-orchestrator) for multi-system orchestration, [grounded-triage](https://github.com/shahabajsk/grounded-triage) for zero-fabrication verification.
 

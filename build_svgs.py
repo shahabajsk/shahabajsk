@@ -6,6 +6,8 @@ Run: python build_svgs.py
 
 import math
 
+import sections
+
 THEMES = {
     "light": dict(bg="#f3f5f7", panel="#ffffff", ink="#14213d", ink2="#4a5873", rule="#c3ccd8",
                   ok="#1f7a5c", bad="#b42318", hold="#a15c00", chip="#e3ecf5", term="#0f1726",
@@ -503,4 +505,6 @@ if __name__ == "__main__":
         open(f"divider-{name}.svg", "w").write(divider(c))
         open(f"industries-{name}.svg", "w").write(industries(c))
         open(f"metrics-{name}.svg", "w").write(metrics(c))
+        open(f"highlights-{name}.svg", "w").write(sections.line_map(c, sections.LINES[name]))
+        open(f"build-{name}.svg", "w").write(sections.mechanisms(c, sections.LINES[name]))
     print("wrote all svgs x light/dark")
