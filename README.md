@@ -9,7 +9,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="metrics-dark.svg">
-  <img alt="14 years in enterprise software, 6 industries worked in, 36 of 36 fabrications caught in eval, 0 unverified notes shipped." src="metrics-light.svg" width="100%">
+  <img alt="14 years in enterprise software, 21 skills in one production orchestrator, zero fabrications across thousands of transactions, 6 industries in production." src="metrics-light.svg" width="100%">
 </picture>
 
 <table>
@@ -17,7 +17,7 @@
     <td width="50%" valign="top">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="about-dark.svg">
-        <img alt="About me as a Python class: Gurugram, AI Solutions Architect at DevRev, 14 years across airlines, banking, fintech and pricing. Engages by discovering, building, iterating until evals pass the client's gates, then shipping in shadow mode." src="about-light.svg" width="100%">
+        <img alt="About me as a Python class: Gurugram, Forward Deployed Engineer and AI Solution Architect at DevRev, 14 years across airline, banking, fintech and pricing. Engages by discovering, building, iterating until evals pass the client's gates, then shipping in shadow mode." src="about-light.svg" width="100%">
       </picture>
     </td>
     <td width="50%" valign="top">
@@ -37,12 +37,22 @@
 
 ## Where I've worked
 
-Airline, banking and other industries. Client names stay out; the patterns are public.
+Production-grade AI systems in airline, banking, fintech, consumer goods, automotive and legal. Client names stay out.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="industries-dark.svg">
-  <img alt="Industries: airline customer operations agent in production, banking fraud investigation agent in pilot, fintech agent workstreams, consumer goods agentic workstreams, automotive demand forecasting, legal tech founder." src="industries-light.svg" width="100%">
+  <img alt="Production-grade work by industry. Airline: deterministic 14-state orchestrator with 21 skills across CRM, reservations, payments and messaging. Banking: fraud investigation with every finding cited to its source record, zero fabrications at scale. Fintech: service-operations automation with human approvals. Consumer goods: vendor share, beat-plan adherence, GST cost modelling and route optimisation. Automotive: LightGBM demand forecasting. Legal: founded Legit.ai." src="industries-light.svg" width="100%">
 </picture>
+
+## Highlights
+
+- **Airline.** Architected and own delivery of a deterministic 14-state orchestrator that runs customer operations end to end. It coordinates 21 skills across CRM, reservations, payments and messaging, and every transition is explicit and testable. Adoption peaked, and the airline consolidated its resolution work on the platform.
+- **Banking.** Built a fraud investigation system where every finding cites the transaction record it came from, and deterministic verification blocks anything uncited. Under adversarial QA it passed 46 of 50 cases, with zero fabrications across thousands of transactions.
+- **Fintech.** Designed service-operations automation for IT, HR, finance and promo workflows on one platform of record. Automation acts where policy already decides the outcome; every other approval stays with a human.
+- **Consumer goods.** Designed AI workflows for vendor share-of-business, beat-plan adherence, GST cost modelling and route optimisation.
+- **Automotive.** Built a LightGBM demand forecasting model and took it through staged delivery.
+- **Founder.** Built Legit.ai, a multi-model AI platform for lawyers, and sold it to paying customers.
+- **Speaking.** Ran "Who Owns the Outcome? Leading When Your Newest Team Member Is an AI" for RateGain's NorthStar 2.0 first-manager programme.
 
 ## What I build
 

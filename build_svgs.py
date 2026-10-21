@@ -97,8 +97,8 @@ def hero(c: dict) -> str:
   </g>
 
   <text x="70" y="86" font-family="{SERIF}" font-size="46" font-weight="700" fill="{c["ink"]}">Shahabaj Sheikh</text>
-  <text x="70" y="124" font-size="19" fill="{c["ink2"]}">Forward-deployed AI engineer. I take agentic systems from discovery to production</text>
-  <text x="70" y="150" font-size="19" fill="{c["ink2"]}">inside enterprises where a wrong answer has a cost.</text>
+  <text x="70" y="124" font-size="20" font-weight="700" fill="{c["ok"]}">Forward Deployed Engineer &amp; AI Solution Architect at DevRev</text>
+  <text x="70" y="152" font-size="18" fill="{c["ink2"]}">Agentic systems from discovery to production, where a wrong answer has a cost.</text>
   <line x1="70" y1="176" x2="890" y2="176" stroke="{c["rule"]}"/>
 
   {arrows}
@@ -289,12 +289,12 @@ def stack(c: dict) -> str:
 
 # Industries. Client names stay out; only the industry and the kind of work.
 INDUSTRIES = [
-    ("plane", "Airline", "Customer operations agent", "production"),
-    ("bank", "Banking", "Fraud investigation agent", "pilot"),
-    ("card", "Fintech", "Agent workstreams", "agents"),
-    ("box", "Consumer goods", "Four agentic AI workstreams", "agents"),
-    ("car", "Automotive", "Demand forecasting with LightGBM", "ML"),
-    ("scale", "Legal", "Legit.ai, multi-model platform", "founder"),
+    ("plane", "Airline", ["Deterministic 14-state orchestrator,", "21 skills across CRM, reservations,", "payments and messaging"], "production-grade"),
+    ("bank", "Banking", ["Fraud investigation; every finding", "cited to its source record;", "zero fabrications at scale"], "production-grade"),
+    ("card", "Fintech", ["Service-ops automation for IT, HR,", "finance and promo workflows,", "humans keep the approvals"], "production-grade"),
+    ("box", "Consumer goods", ["Vendor share, beat-plan adherence,", "GST cost modelling and route", "optimisation workflows"], "production-grade"),
+    ("car", "Automotive", ["LightGBM demand forecasting,", "taken through staged delivery"], "production-grade"),
+    ("scale", "Legal", ["Founded Legit.ai, a multi-model", "AI platform for lawyers, sold to", "paying customers"], "founder"),
 ]
 
 GLYPHS = {
@@ -309,17 +309,17 @@ GLYPHS = {
 
 
 def industries(c: dict) -> str:
-    cols, card_w, card_h, gap = 3, 290, 118, 20
+    cols, card_w, card_h, gap = 3, 290, 150, 20
     w = 960
     rows = (len(INDUSTRIES) + cols - 1) // cols
     h = 30 + rows * (card_h + gap)
     loop = 10.0
     out = []
-    for i, (g, name, what, tag) in enumerate(INDUSTRIES):
+    for i, (g, name, lines, tag) in enumerate(INDUSTRIES):
         x = 24 + (i % cols) * (card_w + gap)
         y = 14 + (i // cols) * (card_h + gap)
         on = (0.2 + i * 0.25) / loop
-        accent = c["ok"] if tag in ("production", "founder") else ("#6d5dfc" if tag == "pilot" else c["hold"])
+        accent = c["ok"] if tag == "production-grade" else "#6d5dfc"
         tw = 16 + len(tag) * 7.2
         out.append(f"""
   <g>
@@ -329,15 +329,15 @@ def industries(c: dict) -> str:
     <circle cx="{x + 38}" cy="{y + 40}" r="22" fill="{accent}" fill-opacity="0.14"/>
     <g transform="translate({x + 26} {y + 28})"><path d="{GLYPHS[g]}" fill="none" stroke="{accent}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
     <text x="{x + 74}" y="{y + 36}" font-size="17" font-weight="700" fill="{c["ink"]}">{name}</text>
-    <text x="{x + 74}" y="{y + 56}" font-size="12.5" fill="{c["ink2"]}">{what}</text>
-    <rect x="{x + 74}" y="{y + 76}" width="{tw}" height="22" rx="11" fill="{accent}" fill-opacity="0.16"/>
-    <circle cx="{x + 84}" cy="{y + 87}" r="3.5" fill="{accent}">
+    {"".join(f'<text x="{x + 74}" y="{y + 58 + j * 17}" font-size="12" fill="{c["ink2"]}">{t}</text>' for j, t in enumerate(lines))}
+    <rect x="{x + 74}" y="{y + 112}" width="{tw}" height="22" rx="11" fill="{accent}" fill-opacity="0.16"/>
+    <circle cx="{x + 84}" cy="{y + 123}" r="3.5" fill="{accent}">
       <animate attributeName="r" dur="2s" repeatCount="indefinite" values="3.5;5;3.5"/>
       <animate attributeName="fill-opacity" dur="2s" repeatCount="indefinite" values="1;0.4;1"/>
     </circle>
-    <text x="{x + 94}" y="{y + 91.5}" font-size="11.5" font-weight="700" fill="{accent}">{tag}</text>
+    <text x="{x + 94}" y="{y + 127.5}" font-size="11.5" font-weight="700" fill="{accent}">{tag}</text>
   </g>""")
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" font-family="{SANS}" role="img" aria-label="Industries: airline customer operations agent in production; banking fraud investigation agent in pilot; fintech agent programme; consumer goods agentic workstreams; automotive demand forecasting; legal tech founder.">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" font-family="{SANS}" role="img" aria-label="Production-grade work by industry. Airline: deterministic 14-state orchestrator with 21 skills across CRM, reservations, payments and messaging. Banking: fraud investigation with every finding cited to its record, zero fabrications across thousands of transactions. Fintech: service-operations automation with human approvals. Consumer goods: vendor share, beat-plan adherence, GST cost modelling and route optimisation. Automotive: LightGBM demand forecasting. Legal: founded Legit.ai.">
   <rect width="{w}" height="{h}" rx="14" fill="{c["bg"]}"/>
   {"".join(out)}
 </svg>
@@ -346,9 +346,9 @@ def industries(c: dict) -> str:
 
 METRICS = [
     (14, "", "years in enterprise software"),
-    (6, "", "industries worked in"),
-    (36, "/36", "fabrications caught in eval"),
-    (0, "", "unverified notes shipped"),
+    (21, "", "skills in one orchestrator"),
+    (0, "", "fabrications, thousands of txns"),
+    (6, "", "industries in production"),
 ]
 
 
@@ -362,18 +362,18 @@ def metrics(c: dict) -> str:
         frames = sorted(set([0, round(n * 0.25), round(n * 0.5), round(n * 0.75), n])) if n else [0]
         start = (0.3 + i * 0.4) / loop
         stepf = 0.07 / loop * 10
-        color = c["ok"] if (n == 0 or i == 2) else c["ink"]
+        color = c["ok"] if i == 2 else c["ink"]
         for j, v in enumerate(frames):
             t_on = start + j * stepf / len(frames)
             last = j == len(frames) - 1
             t_off = 0.97 if last else start + (j + 1) * stepf / len(frames)
             base = "1" if last else "0"
-            out.append(f'<text x="{x}" y="58" font-family="{SERIF}" font-size="42" font-weight="700" fill="{color}" opacity="{base}">{v}<tspan font-size="22" fill="{c["ink2"]}">{suffix}</tspan>'
+            out.append(f'<text x="{x}" y="58" font-family="{SERIF}" font-size="42" font-weight="700" fill="{color}" opacity="{base}">{v:,}<tspan font-size="22" fill="{c["ink2"]}">{suffix}</tspan>'
                        f'<animate attributeName="opacity" dur="{loop}s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;{t_on:.4f};{t_off:.4f}" values="0;1;0"/></text>')
         out.append(f'<text x="{x}" y="86" font-size="13" fill="{c["ink2"]}">{label}</text>')
         if i:
             out.append(f'<line x1="{24 + i * seg}" y1="22" x2="{24 + i * seg}" y2="94" stroke="{c["rule"]}"/>')
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" font-family="{SANS}" role="img" aria-label="14 years in enterprise software; 6 industries worked in; 36 of 36 fabrications caught in eval; 0 unverified notes shipped.">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" font-family="{SANS}" role="img" aria-label="14 years in enterprise software; 21 skills in one production orchestrator; zero fabrications across thousands of transactions; 6 industries in production.">
   <rect width="{w}" height="{h}" rx="14" fill="{c["bg"]}"/>
   {"".join(out)}
 </svg>
@@ -383,7 +383,9 @@ def metrics(c: dict) -> str:
 CODE = [
     [("kw", "class "), ("cls", "Shahabaj"), ("p", "("), ("cls", "ForwardDeployedEngineer"), ("p", "):")],
     [("p", "    based_in  = "), ("str", '"Gurugram, India"')],
-    [("p", "    role      = "), ("str", '"AI Solutions Architect @ DevRev"')],
+    [("p", "    role      = "), ("str", '"Forward Deployed Engineer"')],
+    [("p", "    also      = "), ("str", '"AI Solution Architect"')],
+    [("p", "    at        = "), ("str", '"DevRev"')],
     [("p", "    years     = "), ("num", "14")],
     [("p", "    domains   = ["), ("str", '"airline"'), ("p", ", "), ("str", '"banking"'), ("p", ", "), ("str", '"fintech"'), ("p", ", "), ("str", '"pricing"'), ("p", "]")],
     [("p", "    speaks    = ["), ("str", '"English"'), ("p", ", "), ("str", '"Hindi"'), ("p", ", "), ("str", '"Bengali"'), ("p", "]")],
@@ -410,7 +412,7 @@ def code_card(c: dict) -> str:
         rows.append(f'<text x="52" y="{y}" font-family="{MONO}" font-size="13" xml:space="preserve">{spans}'
                     f'<animate attributeName="opacity" dur="{loop}s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;{on:.3f};0.97" values="0;1;0"/></text>'
                     f'<text x="22" y="{y}" font-family="{MONO}" font-size="12" fill="{c["tink2"]}" opacity="0.6">{i + 1}</text>')
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="About me, written as a Python class: based in Gurugram, AI Solutions Architect at DevRev, 14 years, airlines, banking, fintech and pricing; engages by discovering, building, iterating until evals pass the client's gates, then shipping in shadow mode.">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="About me, written as a Python class: based in Gurugram, Forward Deployed Engineer and AI Solution Architect at DevRev, 14 years, airline, banking, fintech and pricing; engages by discovering, building, iterating until evals pass the client's gates, then shipping in shadow mode.">
   <rect width="{w}" height="{h}" rx="10" fill="{c["term"]}"/>
   <line x1="0" y1="34" x2="{w}" y2="34" stroke="#ffffff" stroke-opacity="0.08"/>
   <circle cx="22" cy="17" r="5.5" fill="#ffffff" fill-opacity="0.18"/>
