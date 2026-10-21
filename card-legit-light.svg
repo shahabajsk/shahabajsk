@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" width="560" height="200" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-label="Legit.ai: Multi-model AI platform for lawyers">
+  <rect x="0.5" y="0.5" width="559" height="199" rx="12" fill="#ffffff" stroke="#c3ccd8"/>
+  <rect x="0.5" y="0.5" width="6" height="199" rx="3" fill="#6d5dfc"/>
+  <text x="24" y="40" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" fill="#14213d">Legit.ai</text>
+  <text x="24" y="64" font-size="13.5" fill="#4a5873">Multi-model AI platform for lawyers</text>
+  
+  <text x="24" y="104" font-size="14" fill="#14213d">Built it, sold it to paying customers, didn't raise.</text>
+  <text x="24" y="130" font-size="14" fill="#4a5873">Code is private. Happy to walk through the</text>
+  <text x="24" y="150" font-size="14" fill="#4a5873">architecture and what I'd do differently.</text>
+  <rect x="24" y="166" width="63" height="22" rx="11" fill="#e3ecf5"/><text x="55.5" y="181" text-anchor="middle" font-size="11.5" fill="#4a5873">founder</text><rect x="95" y="166" width="91" height="22" rx="11" fill="#e3ecf5"/><text x="140.5" y="181" text-anchor="middle" font-size="11.5" fill="#4a5873">multi-model</text><rect x="194" y="166" width="49" height="22" rx="11" fill="#e3ecf5"/><text x="218.5" y="181" text-anchor="middle" font-size="11.5" fill="#4a5873">legal</text>
+</svg>
