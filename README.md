@@ -21,16 +21,18 @@
       </picture>
     </td>
     <td width="50%" valign="top">
+      <a href="https://github.com/shahabajsk/disruption-orchestrator">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="card-orch-dark.svg">
+          <img alt="disruption-orchestrator: 14-state machine across CRM, reservations, payments and messaging. 57 bad drafts caught, 9 retries absorbed, 0 invariant breaches." src="card-orch-light.svg" width="100%">
+        </picture>
+      </a>
       <a href="https://github.com/shahabajsk/grounded-triage">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="card-triage-dark.svg">
           <img alt="grounded-triage: 36 fabrications injected, 36 caught by the verifier, 0 unverified notes shipped." src="card-triage-light.svg" width="100%">
         </picture>
       </a>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="card-legit-dark.svg">
-        <img alt="Legit.ai: multi-model AI platform for lawyers. Built it, sold it to paying customers, didn't raise." src="card-legit-light.svg" width="100%">
-      </picture>
     </td>
   </tr>
 </table>
@@ -60,7 +62,7 @@ Production-grade AI systems in airline, banking, fintech, consumer goods, automo
 - **Grounding checks that don't depend on a second model.** Every value in an agent's output traced to a source record and checked in code before it reaches a customer or a case file.
 - **The parts around the model.** Discovery, success criteria written into the SOW, shadow-mode rollouts, and monitoring for when a data source goes stale.
 
-Client code belongs to clients. The patterns are public in [grounded-triage](https://github.com/shahabajsk/grounded-triage).
+Client code belongs to clients. The patterns are public: [disruption-orchestrator](https://github.com/shahabajsk/disruption-orchestrator) for multi-system orchestration, [grounded-triage](https://github.com/shahabajsk/grounded-triage) for zero-fabrication verification.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="divider-dark.svg">

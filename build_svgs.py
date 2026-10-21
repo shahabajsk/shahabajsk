@@ -426,13 +426,21 @@ def code_card(c: dict) -> str:
 
 def project_card(c: dict, kind: str) -> str:
     w, h = 560, 200
-    if kind == "triage":
-        title, sub = "grounded-triage", "State-machine agent for bank card-dispute triage"
+    if kind in ("triage", "orch"):
+        if kind == "triage":
+            title, sub = "grounded-triage", "Bank card-dispute triage with a zero-fabrication verifier"
+            series = [("fabrications injected", 36, c["bad"]), ("caught by verifier", 36, c["hold"]),
+                      ("unverified notes shipped", 0, c["ok"])]
+        else:
+            title, sub = "disruption-orchestrator", "14-state machine across CRM, reservations, payments, messaging"
+            series = [("bad drafts caught", 57, c["hold"]), ("retries absorbed", 9, "#6d5dfc"),
+                      ("invariant breaches", 0, c["ok"])]
+        top = max(v for _, v, _ in series)
         loop = 8.0
         bars = []
-        for i, (label, val, color) in enumerate([("fabrications injected", 36, c["bad"]), ("caught by verifier", 36, c["hold"]), ("unverified notes shipped", 0, c["ok"])]):
+        for i, (label, val, color) in enumerate(series):
             y = 92 + i * 26
-            full = 300 * val / 36
+            full = 300 * val / top
             bars.append(f'''
   <text x="24" y="{y + 11}" font-size="12.5" fill="{c["ink2"]}">{label}</text>
   <rect x="200" y="{y}" width="300" height="14" rx="7" fill="{c["chip"]}"/>
@@ -441,7 +449,7 @@ def project_card(c: dict, kind: str) -> str:
   </rect>
   <text x="{510}" y="{y + 11}" font-size="13" font-weight="700" fill="{color}">{val}</text>''')
         body = "".join(bars)
-        tags = ["Python", "React + TypeScript", "live dashboard"]
+        tags = ["Python", "React + TypeScript", "live dashboard"] if kind == "triage" else ["Python", "16 skills", "saga rollback", "replayable"]
     else:
         title, sub = "Legit.ai", "Multi-model AI platform for lawyers"
         body = f'''
@@ -458,7 +466,7 @@ def project_card(c: dict, kind: str) -> str:
         tx += tw + 8
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" font-family="{SANS}" role="img" aria-label="{title}: {sub}">
   <rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="12" fill="{c["panel"]}" stroke="{c["rule"]}"/>
-  <rect x="0.5" y="0.5" width="6" height="{h - 1}" rx="3" fill="{c["ok"] if kind == "triage" else "#6d5dfc"}"/>
+  <rect x="0.5" y="0.5" width="6" height="{h - 1}" rx="3" fill="{ {"triage": c["ok"], "orch": c["hold"]}.get(kind, "#6d5dfc") }"/>
   <text x="24" y="40" font-family="{SERIF}" font-size="24" font-weight="700" fill="{c["ink"]}">{title}</text>
   <text x="24" y="64" font-size="13.5" fill="{c["ink2"]}">{sub}</text>
   {body}
@@ -491,6 +499,7 @@ if __name__ == "__main__":
         open(f"about-{name}.svg", "w").write(code_card(c))
         open(f"card-triage-{name}.svg", "w").write(project_card(c, "triage"))
         open(f"card-legit-{name}.svg", "w").write(project_card(c, "legit"))
+        open(f"card-orch-{name}.svg", "w").write(project_card(c, "orch"))
         open(f"divider-{name}.svg", "w").write(divider(c))
         open(f"industries-{name}.svg", "w").write(industries(c))
         open(f"metrics-{name}.svg", "w").write(metrics(c))
