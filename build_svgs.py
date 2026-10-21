@@ -243,36 +243,141 @@ def phases(c: dict) -> str:
 
 import json
 
-ICONS = json.load(open("icons.json"))
+STACK = json.load(open("stack.json"))
 
 
 def stack(c: dict) -> str:
-    """Self-hosted icon wall. Tiles fade in left to right once per loop."""
-    names = list(ICONS)
-    tile, gap = 78, 18
-    cols = len(names)
-    w = cols * tile + (cols - 1) * gap + 40
-    h = tile + 58
+    """Categorised icon wall. Tiles rise in row by row; a light sweep crosses each row."""
+    tile, gap, label_w = 74, 14, 150
+    rows = len(STACK)
+    row_h = tile + 40
+    w = 960
+    h = 20 + rows * row_h
     loop = 12.0
-    out = []
-    for i, n in enumerate(names):
-        x = 20 + i * (tile + gap)
-        hexc = ICONS[n]["hex"]
-        fill = "#" + hexc
-        if hexc.lower() in ("191919", "000000"):
-            fill = c["ink"]
-        on = (0.2 + i * 0.12) / loop
-        out.append(f'''
+    out = [f'<defs><linearGradient id="sweep" x1="0" x2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/>'
+           f'<stop offset="0.5" stop-color="#ffffff" stop-opacity="0.10"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient></defs>']
+    k = 0
+    for r, row in enumerate(STACK):
+        y0 = 14 + r * row_h
+        out.append(f'<text x="24" y="{y0 + tile / 2 + 5}" font-size="14" font-weight="700" fill="{c["ink"]}">{row["cat"]}</text>')
+        out.append(f'<line x1="24" y1="{y0 + tile / 2 + 16}" x2="{label_w - 20}" y2="{y0 + tile / 2 + 16}" stroke="{c["ok"]}" stroke-width="2"/>')
+        for i, it in enumerate(row["items"]):
+            x = label_w + i * (tile + gap + 120)
+            on = (0.2 + k * 0.18) / loop
+            k += 1
+            hexc = it["hex"].lower()
+            fill = c["ink"] if hexc in ("000000", "191919", "222222") else "#" + hexc
+            glyph = (f'<g transform="translate({x + tile / 2 - 18} {y0 + tile / 2 - 18}) scale(1.5)"><path d="{it["path"]}" fill="{fill}"/></g>'
+                     if it["path"] else
+                     f'<text x="{x + tile / 2}" y="{y0 + tile / 2 + 6}" text-anchor="middle" font-family="{MONO}" font-size="15" font-weight="700" fill="{c["ok"]}">LGBM</text>')
+            out.append(f"""
   <g>
-    <animate attributeName="opacity" dur="{loop}s" repeatCount="indefinite" keyTimes="0;{on:.3f};{on + 0.03:.3f};0.97;1" values="0;0;1;1;0"/>
-    <rect x="{x}" y="10" width="{tile}" height="{tile}" rx="16" fill="{c["panel"]}" stroke="{c["rule"]}"/>
-    <g transform="translate({x + tile / 2 - 18} {10 + tile / 2 - 18}) scale(1.5)"><path d="{ICONS[n]["path"]}" fill="{fill}"/></g>
-    <text x="{x + tile / 2}" y="{tile + 34}" text-anchor="middle" font-size="12.5" fill="{c["ink2"]}">{n}</text>
-  </g>''')
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" font-family="{SANS}" role="img" aria-label="Stack: {", ".join(names)}">
+    <animate attributeName="opacity" dur="{loop}s" repeatCount="indefinite" keyTimes="0;{on:.3f};{on + 0.04:.3f};0.97;1" values="0;0;1;1;0"/>
+    <animateTransform attributeName="transform" type="translate" dur="{loop}s" repeatCount="indefinite" keyTimes="0;{on:.3f};{on + 0.04:.3f};1" values="0 10;0 10;0 0;0 0"/>
+    <rect x="{x}" y="{y0}" width="{tile}" height="{tile}" rx="18" fill="{c["panel"]}" stroke="{c["rule"]}"/>
+    {glyph}
+    <text x="{x + tile + 14}" y="{y0 + tile / 2 + 5}" font-size="14" fill="{c["ink2"]}">{it["label"]}</text>
+  </g>""")
+
+    names = ", ".join(it["label"] for row in STACK for it in row["items"])
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" font-family="{SANS}" role="img" aria-label="Stack: {names}">
+  <rect width="{w}" height="{h}" rx="14" fill="{c["bg"]}"/>
   {"".join(out)}
 </svg>
-'''
+"""
+
+
+# Industries. Client names stay out; only the industry and the kind of work.
+INDUSTRIES = [
+    ("plane", "Airline", "Customer operations agent", "production"),
+    ("bank", "Banking", "Fraud investigation agent", "pilot"),
+    ("card", "Fintech", "Agent workstreams", "agents"),
+    ("box", "Consumer goods", "Four agentic AI workstreams", "agents"),
+    ("car", "Automotive", "Demand forecasting with LightGBM", "ML"),
+    ("scale", "Legal", "Legit.ai, multi-model platform", "founder"),
+]
+
+GLYPHS = {
+    # simple line icons on a 24x24 grid
+    "plane": "M2 14l20-7-6 13-4-5-5 3 1-5z",
+    "bank": "M3 9l9-5 9 5M5 10v7M9.5 10v7M14.5 10v7M19 10v7M3 20h18",
+    "card": "M3 6h18v12H3zM3 10h18M7 15h4",
+    "box": "M3 7l9-4 9 4v10l-9 4-9-4zM3 7l9 4 9-4M12 11v10",
+    "car": "M4 16v-4l2-5h12l2 5v4M4 16h16M7 16v2M17 16v2M7 12h0M17 12h0M6 12h12",
+    "scale": "M12 3v18M6 21h12M4 8h16M4 8l-2 6h6zM20 8l-2 6h6zM12 3l-8 5M12 3l8 5",
+}
+
+
+def industries(c: dict) -> str:
+    cols, card_w, card_h, gap = 3, 290, 118, 20
+    w = 960
+    rows = (len(INDUSTRIES) + cols - 1) // cols
+    h = 30 + rows * (card_h + gap)
+    loop = 10.0
+    out = []
+    for i, (g, name, what, tag) in enumerate(INDUSTRIES):
+        x = 24 + (i % cols) * (card_w + gap)
+        y = 14 + (i // cols) * (card_h + gap)
+        on = (0.2 + i * 0.25) / loop
+        accent = c["ok"] if tag in ("production", "founder") else ("#6d5dfc" if tag == "pilot" else c["hold"])
+        tw = 16 + len(tag) * 7.2
+        out.append(f"""
+  <g>
+    <animate attributeName="opacity" dur="{loop}s" repeatCount="indefinite" keyTimes="0;{on:.3f};{on + 0.05:.3f};0.97;1" values="0;0;1;1;0"/>
+    <animateTransform attributeName="transform" type="translate" dur="{loop}s" repeatCount="indefinite" keyTimes="0;{on:.3f};{on + 0.05:.3f};1" values="0 12;0 12;0 0;0 0"/>
+    <rect x="{x}" y="{y}" width="{card_w}" height="{card_h}" rx="14" fill="{c["panel"]}" stroke="{c["rule"]}"/>
+    <circle cx="{x + 38}" cy="{y + 40}" r="22" fill="{accent}" fill-opacity="0.14"/>
+    <g transform="translate({x + 26} {y + 28})"><path d="{GLYPHS[g]}" fill="none" stroke="{accent}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <text x="{x + 74}" y="{y + 36}" font-size="17" font-weight="700" fill="{c["ink"]}">{name}</text>
+    <text x="{x + 74}" y="{y + 56}" font-size="12.5" fill="{c["ink2"]}">{what}</text>
+    <rect x="{x + 74}" y="{y + 76}" width="{tw}" height="22" rx="11" fill="{accent}" fill-opacity="0.16"/>
+    <circle cx="{x + 84}" cy="{y + 87}" r="3.5" fill="{accent}">
+      <animate attributeName="r" dur="2s" repeatCount="indefinite" values="3.5;5;3.5"/>
+      <animate attributeName="fill-opacity" dur="2s" repeatCount="indefinite" values="1;0.4;1"/>
+    </circle>
+    <text x="{x + 94}" y="{y + 91.5}" font-size="11.5" font-weight="700" fill="{accent}">{tag}</text>
+  </g>""")
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" font-family="{SANS}" role="img" aria-label="Industries: airline customer operations agent in production; banking fraud investigation agent in pilot; fintech agent programme; consumer goods agentic workstreams; automotive demand forecasting; legal tech founder.">
+  <rect width="{w}" height="{h}" rx="14" fill="{c["bg"]}"/>
+  {"".join(out)}
+</svg>
+"""
+
+
+METRICS = [
+    (14, "", "years in enterprise software"),
+    (6, "", "industries worked in"),
+    (36, "/36", "fabrications caught in eval"),
+    (0, "", "unverified notes shipped"),
+]
+
+
+def metrics(c: dict) -> str:
+    w, h = 960, 116
+    loop = 12.0
+    seg = (w - 48) / len(METRICS)
+    out = []
+    for i, (n, suffix, label) in enumerate(METRICS):
+        x = 24 + i * seg + 20
+        frames = sorted(set([0, round(n * 0.25), round(n * 0.5), round(n * 0.75), n])) if n else [0]
+        start = (0.3 + i * 0.4) / loop
+        stepf = 0.07 / loop * 10
+        color = c["ok"] if (n == 0 or i == 2) else c["ink"]
+        for j, v in enumerate(frames):
+            t_on = start + j * stepf / len(frames)
+            last = j == len(frames) - 1
+            t_off = 0.97 if last else start + (j + 1) * stepf / len(frames)
+            base = "1" if last else "0"
+            out.append(f'<text x="{x}" y="58" font-family="{SERIF}" font-size="42" font-weight="700" fill="{color}" opacity="{base}">{v}<tspan font-size="22" fill="{c["ink2"]}">{suffix}</tspan>'
+                       f'<animate attributeName="opacity" dur="{loop}s" repeatCount="indefinite" calcMode="discrete" keyTimes="0;{t_on:.4f};{t_off:.4f}" values="0;1;0"/></text>')
+        out.append(f'<text x="{x}" y="86" font-size="13" fill="{c["ink2"]}">{label}</text>')
+        if i:
+            out.append(f'<line x1="{24 + i * seg}" y1="22" x2="{24 + i * seg}" y2="94" stroke="{c["rule"]}"/>')
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" font-family="{SANS}" role="img" aria-label="14 years in enterprise software; 6 industries worked in; 36 of 36 fabrications caught in eval; 0 unverified notes shipped.">
+  <rect width="{w}" height="{h}" rx="14" fill="{c["bg"]}"/>
+  {"".join(out)}
+</svg>
+"""
 
 
 CODE = [
@@ -280,7 +385,7 @@ CODE = [
     [("p", "    based_in  = "), ("str", '"Gurugram, India"')],
     [("p", "    role      = "), ("str", '"AI Solutions Architect @ DevRev"')],
     [("p", "    years     = "), ("num", "14")],
-    [("p", "    domains   = ["), ("str", '"airlines"'), ("p", ", "), ("str", '"banking"'), ("p", ", "), ("str", '"fintech"'), ("p", ", "), ("str", '"pricing"'), ("p", "]")],
+    [("p", "    domains   = ["), ("str", '"airline"'), ("p", ", "), ("str", '"banking"'), ("p", ", "), ("str", '"fintech"'), ("p", ", "), ("str", '"pricing"'), ("p", "]")],
     [("p", "    speaks    = ["), ("str", '"English"'), ("p", ", "), ("str", '"Hindi"'), ("p", ", "), ("str", '"Bengali"'), ("p", "]")],
     [],
     [("kw", "    def "), ("fn", "engage"), ("p", "(self, client):")],
@@ -385,4 +490,6 @@ if __name__ == "__main__":
         open(f"card-triage-{name}.svg", "w").write(project_card(c, "triage"))
         open(f"card-legit-{name}.svg", "w").write(project_card(c, "legit"))
         open(f"divider-{name}.svg", "w").write(divider(c))
+        open(f"industries-{name}.svg", "w").write(industries(c))
+        open(f"metrics-{name}.svg", "w").write(metrics(c))
     print("wrote all svgs x light/dark")
