@@ -51,7 +51,7 @@ Production-grade AI systems in airline, banking, fintech, consumer goods, automo
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="highlights-dark.svg">
-  <img alt="Highlights as a transit map. A grey line runs from 2011 through Deloitte, TCS, airline planning, Sabre, RPost and RateGain into DevRev, where coloured lines lead to five production boards: airline, 21 skills across a 14-state orchestrator; banking, 0 fabrications across thousands of transactions; fintech, one platform for IT, HR, finance and promo; consumer goods, 4 AI workflows; automotive, LightGBM demand forecasting. Also founded Legit.ai and spoke on Who Owns the Outcome?" src="highlights-light.svg" width="100%">
+  <img alt="Highlights as a transit map. One line runs through four technology waves: automation and RPA at TCS (2011) and Deloitte (2014), analytics at an airline (2019) and RPost (2021), ML in production at Sabre (2022) and RateGain (2023), and LLM agents at DevRev (2026, now). Trains leave DevRev on five lines to production-grade results: airline, 21 skills across a 14-state orchestrator; banking, 0 fabrications across thousands of transactions and 46/50 adversarial QA; fintech, one platform for IT, HR, finance and promo; consumer goods, 4 AI workflows; automotive, LightGBM forecasting. Founded Legit.ai in 2025, legal AI on Claude, OpenAI and own models." src="highlights-light.svg" width="100%">
 </picture>
 
 <details>
@@ -73,7 +73,7 @@ Agents that a risk team can read and a test suite can hold to account. Each pane
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="build-dark.svg">
-  <img alt="Three looping panels. 01: a prompt injection demanding a 99,999 rupee refund reaches read choice, where only a voucher was offered, so it goes to a human; 0 out-of-policy payments. 02: a draft says flight ZZ369 but the case facts say ZZ396, so it is blocked, redrafted from facts and sent; 62 bad drafts caught, 0 sent. 03: a refund commits, the response times out, the retry carries the same idempotency key and gets the same payment back; 0 duplicate payments." src="build-light.svg" width="100%">
+  <img alt="Three looping replays of real traces. 01: a delayed customer offered only a voucher accepts it; a prompt injection demanding a 99,999 rupee refund hits the refund option, which was not offered, and goes to a human. 02: in a Hinglish WhatsApp thread the offer passes the check and sends; a rebooking draft saying ZZ758 when the case facts say ZZ785 is blocked, corrected, rechecked and sent. 03: a refund commits, the response times out, the retry carries the same idempotency key, no second payment is created and the first one comes back." src="build-light.svg" width="100%">
 </picture>
 
 <details>

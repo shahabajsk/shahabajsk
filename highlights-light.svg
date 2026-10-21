@@ -1,136 +1,215 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-label="Highlights as a transit map. A grey line runs from 2011 through Deloitte, TCS, airline planning, Sabre, RPost and RateGain into a DevRev interchange, now Forward Deployed Engineer and AI Solution Architect. Coloured lines leave DevRev for five production boards. Airline: 21 skills, 14 states, one orchestrator that runs customer ops end to end; I own delivery. Banking: 0 fabrications across thousands of transactions, every finding cites its record, 46 of 50 adversarial QA cases passed. Fintech: one platform for IT, HR, finance and promo; policy decides, humans keep the other calls. Consumer goods: 4 AI workflows for vendor share, beat plans, GST cost and routes. Automotive: LightGBM demand forecasting taken through staged delivery. Also: founded Legit.ai, multi-model AI for lawyers, sold to paying customers; spoke on 'Who Owns the Outcome?'.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" width="960" height="620" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" role="img" aria-label="Highlights as a transit map. One line runs through four technology waves: automation and RPA at TCS (2011) and Deloitte (2014); analytics and optimisation at an airline (2019) and RPost (2021); ML in production at Sabre (2022) and RateGain (2023); LLM agents at DevRev (2026, now), as Forward Deployed Engineer and AI Solution Architect. A train runs the line on a loop, lighting each station, then trains leave DevRev on five coloured lines to production-grade results. Airline: 21 skills, 14 states, one orchestrator that runs customer ops end to end. Banking: 0 fabrications across thousands of transactions; every finding cites its record; 46 of 50 adversarial QA cases passed. Fintech: one platform for IT, HR, finance and promo. Consumer goods: 4 AI workflows. Automotive: LightGBM demand forecasting. Side lines: founded Legit.ai in 2025, legal AI on Claude, OpenAI, Perplexity and own models; spoke on 'Who Owns the Outcome?'.">
   <defs>
     <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1" fill="#c3ccd8" opacity="0.45"/></pattern>
     <filter id="soft" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.12"/></filter>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="gleam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="tick"><rect x="40" y="398" width="370" height="30"/></clipPath>
   </defs>
-  <rect width="960" height="560" rx="14" fill="#f3f5f7"/>
-  <rect width="960" height="560" rx="14" fill="url(#dots)"/>
-  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.0000;0.0714;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.0000;0.0714;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 10;0 10;0 0;0 0"/>
-    <rect x="40" y="30" width="206" height="26" rx="4" fill="#f5c400"/>
-    <text x="52" y="48" font-size="13" font-weight="800" letter-spacing="1.6" fill="#14213d">HIGHLIGHTS · LINE MAP</text>
-    <text x="40" y="100" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#14213d">Fourteen years, one line.</text>
-    <text x="40" y="128" font-size="15" fill="#4a5873">Grey stops: enterprise software before LLMs.</text>
-    <text x="40" y="148" font-size="15" fill="#4a5873">Coloured lines: production AI, live with clients.</text>
+  <rect width="960" height="620" rx="14" fill="#f3f5f7"/>
+  <rect width="960" height="620" rx="14" fill="url(#dots)"/>
+  <rect x="40" y="30" width="206" height="26" rx="4" fill="#f5c400"/>
+  <text x="52" y="48" font-size="13" font-weight="800" letter-spacing="1.6" fill="#14213d">HIGHLIGHTS · LINE MAP</text>
+  <text x="40" y="100" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#14213d">Every wave, boarded early.</text>
+  <text x="40" y="128" font-size="15" fill="#4a5873">Automation, analytics, ML, then LLM agents.</text>
+  <text x="40" y="148" font-size="15" fill="#4a5873">Coloured lines: production-grade AI I've delivered.</text>
+  <path d="M40.0 500.0 L172.0 500.0" fill="none" stroke="#8a96a8" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M172.0 500.0 L318.0 500.0" fill="none" stroke="#1b998b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M318.0 500.0 L455.0 500.0" fill="none" stroke="#7c5cff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M455.0 500.0 L500.0 500.0 L530.0 470.0 L530.0 466.0" fill="none" stroke="#e0b000" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M40.0 500.0 L500.0 500.0 L530.0 470.0 L530.0 466.0" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="506.4 546.4" opacity="0.9"><animate attributeName="stroke-dashoffset" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.0200;0.4400;1.0000" values="526.4264068711929;526.4264068711929;0;0"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.4800;0.5600;0.9950;1.0000" values="0.9;0.9;0;0;0.9"/></path>
+  <g opacity="0.45"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.0200;0.0400;0.9500;0.9800;1.0000" values="0.45;0.45;1;1;0.45;0.45"/>
+    <rect x="42" y="566" width="128" height="22" rx="11" fill="#8a96a8" fill-opacity="0.18" stroke="#8a96a8" stroke-opacity="0.6"/>
+    <text x="106.0" y="581" text-anchor="middle" font-size="9.5" font-weight="800" letter-spacing="1" fill="#8a96a8">AUTOMATION · RPA</text>
   </g>
-  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.0714;0.1429;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.0714;0.1429;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="-14 0;-14 0;0 0;0 0"/>
-    <rect x="40" y="178" width="370" height="86" rx="10" fill="#ffffff" stroke="#c3ccd8" filter="url(#soft)"/>
-    <rect x="40" y="178" width="6" height="86" rx="3" fill="#0b8793"/>
-    <circle cx="80" cy="221" r="20" fill="#0b8793"/>
-    <g transform="translate(68 209)" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h11M6 17l4-4M9 6l6 6M12 3l6 6M10 8l4-4 6 6-4 4z"/></g>
-    <rect x="112" y="192" width="71.39999999999999" height="18" rx="9" fill="#0b8793" fill-opacity="0.16"/>
-    <text x="119" y="205" font-size="10.5" font-weight="800" letter-spacing="1.2" fill="#0b8793">FOUNDED</text>
-    <text x="112" y="232" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700" fill="#14213d">Legit.ai</text>
-    <text x="112" y="251" font-size="12.5" fill="#4a5873">Multi-model AI for lawyers. Paying customers.</text>
+  <g opacity="0.45"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.1295;0.1495;0.9500;0.9800;1.0000" values="0.45;0.45;1;1;0.45;0.45"/>
+    <rect x="174" y="566" width="142" height="22" rx="11" fill="#1b998b" fill-opacity="0.18" stroke="#1b998b" stroke-opacity="0.6"/>
+    <text x="245.0" y="581" text-anchor="middle" font-size="9.5" font-weight="800" letter-spacing="1" fill="#1b998b">ANALYTICS</text>
   </g>
-  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.1143;0.1857;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.1143;0.1857;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="-14 0;-14 0;0 0;0 0"/>
-    <rect x="40" y="280" width="370" height="86" rx="10" fill="#ffffff" stroke="#c3ccd8" filter="url(#soft)"/>
-    <rect x="40" y="280" width="6" height="86" rx="3" fill="#a15c00"/>
-    <circle cx="80" cy="323" r="20" fill="#a15c00"/>
-    <g transform="translate(68 311)" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="1" width="8" height="13" rx="4"/><path d="M4 11a8 8 0 0 0 16 0M12 19v4M8 23h8"/></g>
-    <rect x="112" y="294" width="55.0" height="18" rx="9" fill="#a15c00" fill-opacity="0.16"/>
-    <text x="119" y="307" font-size="10.5" font-weight="800" letter-spacing="1.2" fill="#a15c00">SPOKE</text>
-    <text x="112" y="334" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700" fill="#14213d">Who Owns the Outcome?</text>
-    <text x="112" y="353" font-size="12.5" fill="#4a5873">Leading when your newest teammate is an AI.</text>
+  <g opacity="0.45"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.2506;0.2706;0.9500;0.9800;1.0000" values="0.45;0.45;1;1;0.45;0.45"/>
+    <rect x="320" y="566" width="133" height="22" rx="11" fill="#7c5cff" fill-opacity="0.18" stroke="#7c5cff" stroke-opacity="0.6"/>
+    <text x="386.5" y="581" text-anchor="middle" font-size="9.5" font-weight="800" letter-spacing="1" fill="#7c5cff">ML IN PRODUCTION</text>
   </g>
-  <g font-size="12" fill="#4a5873"><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.1429;0.2143;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.1429;0.2143;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 10;0 10;0 0;0 0"/>
-    <line x1="40" y1="410" x2="70" y2="410" stroke="#8a96a8" stroke-width="8" stroke-linecap="round"/>
-    <text x="80" y="414">before LLMs</text>
-    <line x1="170" y1="410" x2="200" y2="410" stroke="#2463d6" stroke-width="8" stroke-linecap="round"/>
-    <text x="210" y="414">production AI</text>
-    <rect x="310" y="402" width="30" height="16" rx="8" fill="#14213d"/>
-    <text x="350" y="414">interchange</text>
+  <g opacity="0.45"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.3642;0.3842;0.9500;0.9800;1.0000" values="0.45;0.45;1;1;0.45;0.45"/>
+    <rect x="457" y="566" width="141" height="22" rx="11" fill="#e0b000" fill-opacity="0.18" stroke="#e0b000" stroke-opacity="0.6"/>
+    <text x="527.5" y="581" text-anchor="middle" font-size="9.5" font-weight="800" letter-spacing="1" fill="#8a6500">LLM AGENTS</text>
   </g>
-  <path d="M40.0 500.0 L470.0 500.0 L500.0 470.0 L500.0 466.0" fill="none" stroke="#8a96a8" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="476.4 506.4" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.0286;0.3143;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="491.4;491.4;0;0"/></path>
-  <text x="40" y="484" font-size="11" font-weight="700" letter-spacing="1" fill="#4a5873">2011</text>
-  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.0485;0.0842;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.0485;0.0842;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 0;0 0;0 0;0 0"/>
-    <circle cx="70" cy="500" r="7" fill="#ffffff" stroke="#14213d" stroke-width="3"/>
-    <text x="70" y="528" text-anchor="middle" font-size="12.5" font-weight="600" fill="#4a5873">Deloitte</text>
+  <g>
+    <circle cx="62" cy="500" r="7" fill="#ffffff" stroke="#14213d" stroke-width="3"><animate attributeName="fill" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.0382;0.0482;0.9500;0.9800;1.0000" values="#ffffff;#ffffff;#8a96a8;#8a96a8;#ffffff;#ffffff"/></circle>
+    <circle cx="62" cy="500" r="7" fill="none" stroke="#8a96a8" stroke-width="2" opacity="0"><animate attributeName="r" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.0382;0.0982;1.0000" values="7;7;20;20"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.0372;0.0382;0.0982;1.0000" values="0;0;0.9;0;0"/></circle>
+    <text x="62" y="527" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4a5873">TCS<animate attributeName="fill" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.0382;0.0482;0.9500;0.9800;1.0000" values="#4a5873;#4a5873;#14213d;#14213d;#4a5873;#4a5873"/></text>
+    <text x="62" y="543" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#4a5873">2011</text>
   </g>
-  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.0950;0.1307;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.0950;0.1307;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 0;0 0;0 0;0 0"/>
-    <circle cx="140" cy="500" r="7" fill="#ffffff" stroke="#14213d" stroke-width="3"/>
-    <text x="140" y="528" text-anchor="middle" font-size="12.5" font-weight="600" fill="#4a5873">TCS</text>
+  <g>
+    <circle cx="132" cy="500" r="7" fill="#ffffff" stroke="#14213d" stroke-width="3"><animate attributeName="fill" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.0963;0.1063;0.9500;0.9800;1.0000" values="#ffffff;#ffffff;#8a96a8;#8a96a8;#ffffff;#ffffff"/></circle>
+    <circle cx="132" cy="500" r="7" fill="none" stroke="#8a96a8" stroke-width="2" opacity="0"><animate attributeName="r" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.0963;0.1563;1.0000" values="7;7;20;20"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.0953;0.0963;0.1563;1.0000" values="0;0;0.9;0;0"/></circle>
+    <text x="132" y="527" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4a5873">Deloitte<animate attributeName="fill" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.0963;0.1063;0.9500;0.9800;1.0000" values="#4a5873;#4a5873;#14213d;#14213d;#4a5873;#4a5873"/></text>
+    <text x="132" y="543" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#4a5873">2014</text>
   </g>
-  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.1548;0.1905;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.1548;0.1905;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 0;0 0;0 0;0 0"/>
-    <circle cx="230" cy="500" r="7" fill="#ffffff" stroke="#14213d" stroke-width="3"/>
-    <text x="230" y="528" text-anchor="middle" font-size="12.5" font-weight="600" fill="#4a5873">Airline planning</text>
+  <g>
+    <circle cx="214" cy="500" r="7" fill="#ffffff" stroke="#14213d" stroke-width="3"><animate attributeName="fill" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.1643;0.1743;0.9500;0.9800;1.0000" values="#ffffff;#ffffff;#1b998b;#1b998b;#ffffff;#ffffff"/></circle>
+    <circle cx="214" cy="500" r="7" fill="none" stroke="#1b998b" stroke-width="2" opacity="0"><animate attributeName="r" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.1643;0.2243;1.0000" values="7;7;20;20"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.1633;0.1643;0.2243;1.0000" values="0;0;0.9;0;0"/></circle>
+    <text x="214" y="527" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4a5873">Airline<animate attributeName="fill" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.1643;0.1743;0.9500;0.9800;1.0000" values="#4a5873;#4a5873;#14213d;#14213d;#4a5873;#4a5873"/></text>
+    <text x="214" y="543" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#4a5873">2019</text>
   </g>
-  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.2133;0.2490;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.2133;0.2490;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 0;0 0;0 0;0 0"/>
-    <circle cx="318" cy="500" r="7" fill="#ffffff" stroke="#14213d" stroke-width="3"/>
-    <text x="318" y="528" text-anchor="middle" font-size="12.5" font-weight="600" fill="#4a5873">Sabre</text>
+  <g>
+    <circle cx="286" cy="500" r="7" fill="#ffffff" stroke="#14213d" stroke-width="3"><animate attributeName="fill" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.2240;0.2340;0.9500;0.9800;1.0000" values="#ffffff;#ffffff;#1b998b;#1b998b;#ffffff;#ffffff"/></circle>
+    <circle cx="286" cy="500" r="7" fill="none" stroke="#1b998b" stroke-width="2" opacity="0"><animate attributeName="r" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.2240;0.2840;1.0000" values="7;7;20;20"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.2230;0.2240;0.2840;1.0000" values="0;0;0.9;0;0"/></circle>
+    <text x="286" y="527" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4a5873">RPost<animate attributeName="fill" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.2240;0.2340;0.9500;0.9800;1.0000" values="#4a5873;#4a5873;#14213d;#14213d;#4a5873;#4a5873"/></text>
+    <text x="286" y="543" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#4a5873">2021</text>
   </g>
-  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.2571;0.2929;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.2571;0.2929;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 0;0 0;0 0;0 0"/>
-    <circle cx="384" cy="500" r="7" fill="#ffffff" stroke="#14213d" stroke-width="3"/>
-    <text x="384" y="528" text-anchor="middle" font-size="12.5" font-weight="600" fill="#4a5873">RPost</text>
+  <g>
+    <circle cx="352" cy="500" r="7" fill="#ffffff" stroke="#14213d" stroke-width="3"><animate attributeName="fill" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.2788;0.2888;0.9500;0.9800;1.0000" values="#ffffff;#ffffff;#7c5cff;#7c5cff;#ffffff;#ffffff"/></circle>
+    <circle cx="352" cy="500" r="7" fill="none" stroke="#7c5cff" stroke-width="2" opacity="0"><animate attributeName="r" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.2788;0.3388;1.0000" values="7;7;20;20"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.2778;0.2788;0.3388;1.0000" values="0;0;0.9;0;0"/></circle>
+    <text x="352" y="527" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4a5873">Sabre<animate attributeName="fill" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.2788;0.2888;0.9500;0.9800;1.0000" values="#4a5873;#4a5873;#14213d;#14213d;#4a5873;#4a5873"/></text>
+    <text x="352" y="543" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#4a5873">2022</text>
   </g>
-  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.3023;0.3380;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.3023;0.3380;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 0;0 0;0 0;0 0"/>
-    <circle cx="452" cy="500" r="7" fill="#ffffff" stroke="#14213d" stroke-width="3"/>
-    <text x="452" y="528" text-anchor="middle" font-size="12.5" font-weight="600" fill="#4a5873">RateGain</text>
+  <g>
+    <circle cx="420" cy="500" r="7" fill="#ffffff" stroke="#14213d" stroke-width="3"><animate attributeName="fill" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.3351;0.3451;0.9500;0.9800;1.0000" values="#ffffff;#ffffff;#7c5cff;#7c5cff;#ffffff;#ffffff"/></circle>
+    <circle cx="420" cy="500" r="7" fill="none" stroke="#7c5cff" stroke-width="2" opacity="0"><animate attributeName="r" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.3351;0.3951;1.0000" values="7;7;20;20"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.3341;0.3351;0.3951;1.0000" values="0;0;0.9;0;0"/></circle>
+    <text x="420" y="527" text-anchor="middle" font-size="12.5" font-weight="700" fill="#4a5873">RateGain<animate attributeName="fill" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.3351;0.3451;0.9500;0.9800;1.0000" values="#4a5873;#4a5873;#14213d;#14213d;#4a5873;#4a5873"/></text>
+    <text x="420" y="543" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="10.5" fill="#4a5873">2023</text>
   </g>
-  <path d="M452.0 434.0 L452.0 195.0 L588.0 59.0 L604.0 59.0" fill="none" stroke="#2463d6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="447.3 477.3" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.3571;0.4571;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="462.3;462.3;0;0"/></path>
-  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.4429;0.5071;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.4429;0.5071;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="16 0;16 0;0 0;0 0"/>
-    <rect x="604" y="22.0" width="332" height="74" rx="10" fill="#ffffff" stroke="#c3ccd8" filter="url(#soft)"/>
-    <rect x="604" y="22.0" width="6" height="74" rx="3" fill="#2463d6"/>
-    <circle cx="636" cy="59.0" r="16" fill="#2463d6"/>
-    <text x="636" y="65.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">A</text>
-    <text x="664" y="41.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#4a5873">AIRLINE</text>
-    <text x="664" y="67.0"><tspan font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#2463d6">21</tspan><tspan dx="8" font-size="13" font-weight="700" fill="#14213d">skills, 14 states, one orchestrator</tspan></text>
-    <text x="664" y="86.0" font-size="12" fill="#4a5873">Runs customer ops end to end. I own delivery.</text>
+  <path d="M410.0 492.0 L410.0 317.0 L390.0 317.0" fill="none" stroke="#0b8793" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 8" opacity="0.9"/>
+  <path d="M430.0 492.0 L430.0 223.0 L390.0 223.0" fill="none" stroke="#a15c00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 8" opacity="0.9"/>
+  <g>
+    <clipPath id="pc1"><rect x="40" y="184" width="350" height="78" rx="10"/></clipPath>
+    <rect x="40" y="184" width="350" height="78" rx="10" fill="#ffffff" stroke="#c3ccd8" filter="url(#soft)"/>
+    <rect x="40" y="184" width="6" height="78" rx="3" fill="#a15c00"/>
+    <circle cx="78" cy="223" r="19" fill="#a15c00"/>
+    <g transform="translate(66 211)" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="1" width="8" height="13" rx="4"/><path d="M4 11a8 8 0 0 0 16 0M12 19v4M8 23h8"/></g>
+    <rect x="108" y="196" width="55.0" height="18" rx="9" fill="#a15c00" fill-opacity="0.16"/>
+    <text x="115" y="209" font-size="10.5" font-weight="800" letter-spacing="1.2" fill="#a15c00">SPOKE</text>
+    <text x="108" y="234" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" fill="#14213d">Who Owns the Outcome?</text>
+    <text x="108" y="252" font-size="12" fill="#4a5873">Leading when your newest teammate is an AI.</text>
+    <g clip-path="url(#pc1)"><rect x="-120" y="184" width="110" height="78" fill="url(#gleam)" transform="skewX(-20)">
+      <animate attributeName="x" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.5000;0.6200;1.0000" values="-120;-120;470;470"/>
+    </rect></g>
   </g>
-  <path d="M476.0 434.0 L476.0 255.0 L588.0 143.0 L604.0 143.0" fill="none" stroke="#1f7a5c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="353.4 383.4" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.4029;0.5029;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="368.4;368.4;0;0"/></path>
-  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.4886;0.5529;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.4886;0.5529;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="16 0;16 0;0 0;0 0"/>
-    <rect x="604" y="106.0" width="332" height="74" rx="10" fill="#ffffff" stroke="#c3ccd8" filter="url(#soft)"/>
-    <rect x="604" y="106.0" width="6" height="74" rx="3" fill="#1f7a5c"/>
-    <circle cx="636" cy="143.0" r="16" fill="#1f7a5c"/>
-    <text x="636" y="149.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">B</text>
-    <text x="664" y="125.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#4a5873">BANKING</text>
-    <text x="664" y="151.0"><tspan font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#1f7a5c">0</tspan><tspan dx="8" font-size="13" font-weight="700" fill="#14213d">fabrications, thousands of txns</tspan></text>
-    <text x="664" y="170.0" font-size="12" fill="#4a5873">Every finding cites its record. 46/50 adv. QA.</text>
+  <g>
+    <clipPath id="pc2"><rect x="40" y="278" width="350" height="78" rx="10"/></clipPath>
+    <rect x="40" y="278" width="350" height="78" rx="10" fill="#ffffff" stroke="#c3ccd8" filter="url(#soft)"/>
+    <rect x="40" y="278" width="6" height="78" rx="3" fill="#0b8793"/>
+    <circle cx="78" cy="317" r="19" fill="#0b8793"/>
+    <g transform="translate(66 305)" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h11M6 17l4-4M9 6l6 6M12 3l6 6M10 8l4-4 6 6-4 4z"/></g>
+    <rect x="108" y="290" width="128.79999999999998" height="18" rx="9" fill="#0b8793" fill-opacity="0.16"/>
+    <text x="115" y="303" font-size="10.5" font-weight="800" letter-spacing="1.2" fill="#0b8793">FOUNDED · 2025</text>
+    <text x="108" y="328" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" fill="#14213d">Legit.ai</text>
+    <text x="108" y="346" font-size="12" fill="#4a5873">Legal AI on Claude, OpenAI and own models.</text>
+    <g clip-path="url(#pc2)"><rect x="-120" y="278" width="110" height="78" fill="url(#gleam)" transform="skewX(-20)">
+      <animate attributeName="x" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.5000;0.6200;1.0000" values="-120;-120;470;470"/>
+    </rect></g>
   </g>
-  <path d="M500.0 434.0 L500.0 315.0 L588.0 227.0 L604.0 227.0" fill="none" stroke="#6247e8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="259.5 289.5" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.4486;0.5486;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="274.5;274.5;0;0"/></path>
-  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.5343;0.5986;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.5343;0.5986;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="16 0;16 0;0 0;0 0"/>
-    <rect x="604" y="190.0" width="332" height="74" rx="10" fill="#ffffff" stroke="#c3ccd8" filter="url(#soft)"/>
-    <rect x="604" y="190.0" width="6" height="74" rx="3" fill="#6247e8"/>
-    <circle cx="636" cy="227.0" r="16" fill="#6247e8"/>
-    <text x="636" y="233.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">F</text>
-    <text x="664" y="209.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#4a5873">FINTECH</text>
-    <text x="664" y="235.0"><tspan font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#6247e8">1</tspan><tspan dx="8" font-size="13" font-weight="700" fill="#14213d">platform for IT, HR, finance, promo</tspan></text>
-    <text x="664" y="254.0" font-size="12" fill="#4a5873">Policy decides. Humans keep the other calls.</text>
+  <text x="40" y="390" font-size="10" font-weight="800" letter-spacing="1.2" fill="#4a5873">TOOLKIT, PICKED UP WAVE BY WAVE</text>
+  <g clip-path="url(#tick)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" dur="22s" repeatCount="indefinite" values="0 0;-1380 0"/>
+      <text x="40" y="418" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#14213d" textLength="1380" lengthAdjust="spacingAndGlyphs">Python · TypeScript · React · Node.js · Claude API · OpenAI · MCP · Pydantic · pytest · LightGBM · computer vision · anomaly detection · R · SQL · Tableau · RPA · test automation · </text>
+      <text x="1420" y="418" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="12" fill="#14213d" textLength="1380" lengthAdjust="spacingAndGlyphs">Python · TypeScript · React · Node.js · Claude API · OpenAI · MCP · Pydantic · pytest · LightGBM · computer vision · anomaly detection · R · SQL · Tableau · RPA · test automation · </text>
+    </g>
   </g>
-  <path d="M524.0 434.0 L524.0 375.0 L588.0 311.0 L604.0 311.0" fill="none" stroke="#b85f00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="165.5 195.5" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.4943;0.5943;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="180.5;180.5;0;0"/></path>
-  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.5800;0.6443;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.5800;0.6443;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="16 0;16 0;0 0;0 0"/>
-    <rect x="604" y="274.0" width="332" height="74" rx="10" fill="#ffffff" stroke="#c3ccd8" filter="url(#soft)"/>
-    <rect x="604" y="274.0" width="6" height="74" rx="3" fill="#b85f00"/>
-    <circle cx="636" cy="311.0" r="16" fill="#b85f00"/>
-    <text x="636" y="317.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">C</text>
-    <text x="664" y="293.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#4a5873">CONSUMER GOODS</text>
-    <text x="664" y="319.0"><tspan font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#b85f00">4</tspan><tspan dx="8" font-size="13" font-weight="700" fill="#14213d">AI workflows in the field</tspan></text>
-    <text x="664" y="338.0" font-size="12" fill="#4a5873">Vendor share, beat plans, GST cost, routes.</text>
+  <rect x="40" y="398" width="24" height="30" fill="#f3f5f7" opacity="0.7"/><rect x="386" y="398" width="24" height="30" fill="#f3f5f7" opacity="0.7"/>
+  <path d="M482.0 434.0 L482.0 183.0 L606.0 59.0 L620.0 59.0" fill="none" stroke="#2463d6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M482.0 434.0 L482.0 183.0 L606.0 59.0 L620.0 59.0" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.1 13" opacity="0.5"><animate attributeName="stroke-dashoffset" dur="1.4s" repeatCount="indefinite" values="13.1;0"/></path>
+  <path d="M482.0 434.0 L482.0 183.0 L606.0 59.0 L620.0 59.0" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="440.4 470.4" opacity="0"><animate attributeName="stroke-dashoffset" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.5000;0.6100;1.0000" values="455.3624817342638;455.3624817342638;0;0"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.5000;0.5050;0.6500;0.7100;1.0000" values="0;0;1;1;0;0"/></path>
+  <g opacity="0"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.5000;0.5050;0.6100;0.6150;1.0000" values="0;0;1;1;0;0"/><animateMotion dur="12.0s" repeatCount="indefinite" calcMode="spline" path="M482.0 434.0 L482.0 183.0 L606.0 59.0 L620.0 59.0" rotate="auto" keyTimes="0;0.5000;0.6100;1" keyPoints="0;0;1;1" keySplines="0 0 1 1;0.45 0 0.25 1;0 0 1 1"/>
+    <rect x="-12" y="-6" width="24" height="12" rx="5" fill="#2463d6" stroke="#fff" stroke-width="1.5" filter="url(#glow)"/>
   </g>
-  <path d="M548.0 434.0 L548.0 435.0 L588.0 395.0 L604.0 395.0" fill="none" stroke="#c02f72" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="73.6 103.6" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.5400;0.6400;1" keySplines="0 0 1 1;0.4 0 0.2 1;0 0 1 1" values="88.6;88.6;0;0"/></path>
-  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.6257;0.6900;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.6257;0.6900;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="16 0;16 0;0 0;0 0"/>
-    <rect x="604" y="358.0" width="332" height="74" rx="10" fill="#ffffff" stroke="#c3ccd8" filter="url(#soft)"/>
-    <rect x="604" y="358.0" width="6" height="74" rx="3" fill="#c02f72"/>
-    <circle cx="636" cy="395.0" r="16" fill="#c02f72"/>
-    <text x="636" y="401.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">M</text>
-    <text x="664" y="377.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#4a5873">AUTOMOTIVE</text>
-    <text x="664" y="403.0"><tspan font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#c02f72">LightGBM</tspan><tspan dx="8" font-size="13" font-weight="700" fill="#14213d">demand forecasting</tspan></text>
-    <text x="664" y="422.0" font-size="12" fill="#4a5873">Taken through staged delivery.</text>
+  <g>
+    <rect x="620" y="22.0" width="316" height="74" rx="10" fill="#ffffff" stroke="#c3ccd8" filter="url(#soft)"/>
+    <rect x="620" y="22.0" width="316" height="74" rx="10" fill="#2463d6" fill-opacity="0.12" stroke="#2463d6" stroke-width="2.5" opacity="0"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.6100;0.6200;0.7700;0.7800;1.0000" values="0;0;1;1;0;0"/></rect>
+    <rect x="620" y="22.0" width="6" height="74" rx="3" fill="#2463d6"/>
+    <circle cx="652" cy="59.0" r="16" fill="#2463d6"/>
+    <circle cx="652" cy="59.0" r="16" fill="none" stroke="#2463d6" stroke-width="2.5" opacity="0"><animate attributeName="r" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.6100;0.6900;1.0000" values="16;16;34;34"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.6090;0.6100;0.6900;1.0000" values="0;0;0.9;0;0"/></circle>
+    <text x="652" y="65.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">A</text>
+    <text x="680" y="41.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#4a5873">AIRLINE</text>
+    <text x="680" y="67.0"><tspan font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#2463d6">21</tspan><tspan dx="8" font-size="13" font-weight="700" fill="#14213d">skills, 14 states, one orchestrator</tspan></text>
+    <text x="680" y="86.0" font-size="12" fill="#4a5873">Customer ops end to end. I own delivery.</text>
   </g>
-  <g><animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.3000;0.3571;1" values="0;0;1;1"/><animateTransform attributeName="transform" type="translate" dur="7.0s" fill="freeze" calcMode="spline" keyTimes="0;0.3000;0.3571;1" keySplines="0 0 1 1;0.2 0.8 0.2 1;0 0 1 1" values="0 0;0 0;0 0;0 0"/>
-    <rect x="440" y="432" width="120" height="34" rx="17" fill="none" stroke="#f5c400" stroke-width="3" opacity="0">
-      <animate attributeName="opacity" dur="2.4s" begin="0s" repeatCount="indefinite" values="0.9;0;0.9"/>
-      <animate attributeName="stroke-width" dur="2.4s" begin="0s" repeatCount="indefinite" values="3;14;3"/>
+  <path d="M506.0 434.0 L506.0 243.0 L606.0 143.0 L620.0 143.0" fill="none" stroke="#1f7a5c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M506.0 434.0 L506.0 243.0 L606.0 143.0 L620.0 143.0" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.1 13" opacity="0.5"><animate attributeName="stroke-dashoffset" dur="1.4s" repeatCount="indefinite" values="13.1;0"/></path>
+  <path d="M506.0 434.0 L506.0 243.0 L606.0 143.0 L620.0 143.0" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="346.4 376.4" opacity="0"><animate attributeName="stroke-dashoffset" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.5550;0.6650;1.0000" values="361.4213562373095;361.4213562373095;0;0"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.5550;0.5600;0.7050;0.7650;1.0000" values="0;0;1;1;0;0"/></path>
+  <g opacity="0"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.5550;0.5600;0.6650;0.6700;1.0000" values="0;0;1;1;0;0"/><animateMotion dur="12.0s" repeatCount="indefinite" calcMode="spline" path="M506.0 434.0 L506.0 243.0 L606.0 143.0 L620.0 143.0" rotate="auto" keyTimes="0;0.5550;0.6650;1" keyPoints="0;0;1;1" keySplines="0 0 1 1;0.45 0 0.25 1;0 0 1 1"/>
+    <rect x="-12" y="-6" width="24" height="12" rx="5" fill="#1f7a5c" stroke="#fff" stroke-width="1.5" filter="url(#glow)"/>
+  </g>
+  <g>
+    <rect x="620" y="106.0" width="316" height="74" rx="10" fill="#ffffff" stroke="#c3ccd8" filter="url(#soft)"/>
+    <rect x="620" y="106.0" width="316" height="74" rx="10" fill="#1f7a5c" fill-opacity="0.12" stroke="#1f7a5c" stroke-width="2.5" opacity="0"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.6650;0.6750;0.8250;0.8350;1.0000" values="0;0;1;1;0;0"/></rect>
+    <rect x="620" y="106.0" width="6" height="74" rx="3" fill="#1f7a5c"/>
+    <circle cx="652" cy="143.0" r="16" fill="#1f7a5c"/>
+    <circle cx="652" cy="143.0" r="16" fill="none" stroke="#1f7a5c" stroke-width="2.5" opacity="0"><animate attributeName="r" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.6650;0.7450;1.0000" values="16;16;34;34"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.6640;0.6650;0.7450;1.0000" values="0;0;0.9;0;0"/></circle>
+    <text x="652" y="149.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">B</text>
+    <text x="680" y="125.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#4a5873">BANKING</text>
+    <text x="680" y="151.0"><tspan font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#1f7a5c">0</tspan><tspan dx="8" font-size="13" font-weight="700" fill="#14213d">fabrications, thousands of txns</tspan></text>
+    <text x="680" y="170.0" font-size="12" fill="#4a5873">Cited findings. 46/50 adversarial QA.</text>
+  </g>
+  <path d="M530.0 434.0 L530.0 303.0 L606.0 227.0 L620.0 227.0" fill="none" stroke="#6247e8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M530.0 434.0 L530.0 303.0 L606.0 227.0 L620.0 227.0" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.1 13" opacity="0.5"><animate attributeName="stroke-dashoffset" dur="1.4s" repeatCount="indefinite" values="13.1;0"/></path>
+  <path d="M530.0 434.0 L530.0 303.0 L606.0 227.0 L620.0 227.0" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="252.5 282.5" opacity="0"><animate attributeName="stroke-dashoffset" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.6100;0.7200;1.0000" values="267.48023074035524;267.48023074035524;0;0"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.6100;0.6150;0.7600;0.8200;1.0000" values="0;0;1;1;0;0"/></path>
+  <g opacity="0"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.6100;0.6150;0.7200;0.7250;1.0000" values="0;0;1;1;0;0"/><animateMotion dur="12.0s" repeatCount="indefinite" calcMode="spline" path="M530.0 434.0 L530.0 303.0 L606.0 227.0 L620.0 227.0" rotate="auto" keyTimes="0;0.6100;0.7200;1" keyPoints="0;0;1;1" keySplines="0 0 1 1;0.45 0 0.25 1;0 0 1 1"/>
+    <rect x="-12" y="-6" width="24" height="12" rx="5" fill="#6247e8" stroke="#fff" stroke-width="1.5" filter="url(#glow)"/>
+  </g>
+  <g>
+    <rect x="620" y="190.0" width="316" height="74" rx="10" fill="#ffffff" stroke="#c3ccd8" filter="url(#soft)"/>
+    <rect x="620" y="190.0" width="316" height="74" rx="10" fill="#6247e8" fill-opacity="0.12" stroke="#6247e8" stroke-width="2.5" opacity="0"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.7200;0.7300;0.8800;0.8900;1.0000" values="0;0;1;1;0;0"/></rect>
+    <rect x="620" y="190.0" width="6" height="74" rx="3" fill="#6247e8"/>
+    <circle cx="652" cy="227.0" r="16" fill="#6247e8"/>
+    <circle cx="652" cy="227.0" r="16" fill="none" stroke="#6247e8" stroke-width="2.5" opacity="0"><animate attributeName="r" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.7200;0.8000;1.0000" values="16;16;34;34"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.7190;0.7200;0.8000;1.0000" values="0;0;0.9;0;0"/></circle>
+    <text x="652" y="233.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">F</text>
+    <text x="680" y="209.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#4a5873">FINTECH</text>
+    <text x="680" y="235.0"><tspan font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#6247e8">1</tspan><tspan dx="8" font-size="13" font-weight="700" fill="#14213d">platform for IT, HR, finance, promo</tspan></text>
+    <text x="680" y="254.0" font-size="12" fill="#4a5873">Humans approve anything off-policy.</text>
+  </g>
+  <path d="M554.0 434.0 L554.0 363.0 L606.0 311.0 L620.0 311.0" fill="none" stroke="#b85f00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M554.0 434.0 L554.0 363.0 L606.0 311.0 L620.0 311.0" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.1 13" opacity="0.5"><animate attributeName="stroke-dashoffset" dur="1.4s" repeatCount="indefinite" values="13.1;0"/></path>
+  <path d="M554.0 434.0 L554.0 363.0 L606.0 311.0 L620.0 311.0" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="158.5 188.5" opacity="0"><animate attributeName="stroke-dashoffset" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.6650;0.7750;1.0000" values="173.53910524340094;173.53910524340094;0;0"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.6650;0.6700;0.8150;0.8750;1.0000" values="0;0;1;1;0;0"/></path>
+  <g opacity="0"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.6650;0.6700;0.7750;0.7800;1.0000" values="0;0;1;1;0;0"/><animateMotion dur="12.0s" repeatCount="indefinite" calcMode="spline" path="M554.0 434.0 L554.0 363.0 L606.0 311.0 L620.0 311.0" rotate="auto" keyTimes="0;0.6650;0.7750;1" keyPoints="0;0;1;1" keySplines="0 0 1 1;0.45 0 0.25 1;0 0 1 1"/>
+    <rect x="-12" y="-6" width="24" height="12" rx="5" fill="#b85f00" stroke="#fff" stroke-width="1.5" filter="url(#glow)"/>
+  </g>
+  <g>
+    <rect x="620" y="274.0" width="316" height="74" rx="10" fill="#ffffff" stroke="#c3ccd8" filter="url(#soft)"/>
+    <rect x="620" y="274.0" width="316" height="74" rx="10" fill="#b85f00" fill-opacity="0.12" stroke="#b85f00" stroke-width="2.5" opacity="0"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.7750;0.7850;0.9350;0.9450;1.0000" values="0;0;1;1;0;0"/></rect>
+    <rect x="620" y="274.0" width="6" height="74" rx="3" fill="#b85f00"/>
+    <circle cx="652" cy="311.0" r="16" fill="#b85f00"/>
+    <circle cx="652" cy="311.0" r="16" fill="none" stroke="#b85f00" stroke-width="2.5" opacity="0"><animate attributeName="r" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.7750;0.8550;1.0000" values="16;16;34;34"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.7740;0.7750;0.8550;1.0000" values="0;0;0.9;0;0"/></circle>
+    <text x="652" y="317.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">C</text>
+    <text x="680" y="293.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#4a5873">CONSUMER GOODS</text>
+    <text x="680" y="319.0"><tspan font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#b85f00">4</tspan><tspan dx="8" font-size="13" font-weight="700" fill="#14213d">AI workflows in the field</tspan></text>
+    <text x="680" y="338.0" font-size="12" fill="#4a5873">Vendor share, beat plans, GST cost, routes.</text>
+  </g>
+  <path d="M578.0 434.0 L578.0 423.0 L606.0 395.0 L620.0 395.0" fill="none" stroke="#c02f72" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M578.0 434.0 L578.0 423.0 L606.0 395.0 L620.0 395.0" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.1 13" opacity="0.5"><animate attributeName="stroke-dashoffset" dur="1.4s" repeatCount="indefinite" values="13.1;0"/></path>
+  <path d="M578.0 434.0 L578.0 423.0 L606.0 395.0 L620.0 395.0" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="64.6 94.6" opacity="0"><animate attributeName="stroke-dashoffset" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.7200;0.8300;1.0000" values="79.59797974644667;79.59797974644667;0;0"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.7200;0.7250;0.8700;0.9300;1.0000" values="0;0;1;1;0;0"/></path>
+  <g opacity="0"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.7200;0.7250;0.8300;0.8350;1.0000" values="0;0;1;1;0;0"/><animateMotion dur="12.0s" repeatCount="indefinite" calcMode="spline" path="M578.0 434.0 L578.0 423.0 L606.0 395.0 L620.0 395.0" rotate="auto" keyTimes="0;0.7200;0.8300;1" keyPoints="0;0;1;1" keySplines="0 0 1 1;0.45 0 0.25 1;0 0 1 1"/>
+    <rect x="-12" y="-6" width="24" height="12" rx="5" fill="#c02f72" stroke="#fff" stroke-width="1.5" filter="url(#glow)"/>
+  </g>
+  <g>
+    <rect x="620" y="358.0" width="316" height="74" rx="10" fill="#ffffff" stroke="#c3ccd8" filter="url(#soft)"/>
+    <rect x="620" y="358.0" width="316" height="74" rx="10" fill="#c02f72" fill-opacity="0.12" stroke="#c02f72" stroke-width="2.5" opacity="0"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.8300;0.8400;0.9895;0.9995;1.0000" values="0;0;1;1;0;0"/></rect>
+    <rect x="620" y="358.0" width="6" height="74" rx="3" fill="#c02f72"/>
+    <circle cx="652" cy="395.0" r="16" fill="#c02f72"/>
+    <circle cx="652" cy="395.0" r="16" fill="none" stroke="#c02f72" stroke-width="2.5" opacity="0"><animate attributeName="r" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.8300;0.9100;1.0000" values="16;16;34;34"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.8290;0.8300;0.9100;1.0000" values="0;0;0.9;0;0"/></circle>
+    <text x="652" y="401.0" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">M</text>
+    <text x="680" y="377.0" font-size="10.5" font-weight="800" letter-spacing="1.3" fill="#4a5873">AUTOMOTIVE</text>
+    <text x="680" y="403.0"><tspan font-family="Georgia, 'Times New Roman', serif" font-size="25" font-weight="700" fill="#c02f72">LightGBM</tspan><tspan dx="8" font-size="13" font-weight="700" fill="#14213d">forecasting</tspan></text>
+    <text x="680" y="422.0" font-size="12" fill="#4a5873">Demand forecasts, staged delivery.</text>
+  </g>
+  <g>
+    <rect x="470" y="432" width="120" height="34" rx="17" fill="none" stroke="#f5c400" stroke-width="3" opacity="0.6">
+      <animate attributeName="opacity" dur="2.4s" repeatCount="indefinite" values="0.7;0;0.7"/>
+      <animate attributeName="stroke-width" dur="2.4s" repeatCount="indefinite" values="3;16;3"/>
     </rect>
-    <rect x="440" y="432" width="120" height="34" rx="17" fill="#14213d"/>
-    <text x="500.0" y="455" text-anchor="middle" font-size="16" font-weight="800" fill="#f3f5f7">DevRev</text>
-    <text x="574" y="446" font-size="11" font-weight="800" letter-spacing="1.2" fill="#4a5873">NOW</text>
-    <text x="574" y="463" font-size="13" font-weight="600" fill="#14213d">Forward Deployed Engineer &amp; AI Solution Architect</text>
+    <rect x="470" y="432" width="120" height="34" rx="17" fill="#14213d"><animate attributeName="fill" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.4400;0.4500;0.4900;0.5000;1.0000" values="#14213d;#14213d;#f5c400;#f5c400;#14213d;#14213d"/></rect>
+    <circle cx="530.0" cy="449.0" r="30" fill="none" stroke="#f5c400" stroke-width="3" opacity="0"><animate attributeName="r" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.4400;0.5400;1.0000" values="30;30;90;90"/><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.4390;0.4400;0.5400;1.0000" values="0;0;0.9;0;0"/></circle>
+    <text x="530.0" y="455" text-anchor="middle" font-size="16" font-weight="800" fill="#f3f5f7">DevRev<animate attributeName="fill" dur="12.0s" repeatCount="indefinite" calcMode="discrete" keyTimes="0.0000;0.4400;0.4500;0.4900;0.5000;1.0000" values="#f3f5f7;#f3f5f7;#14213d;#14213d;#f3f5f7;#f3f5f7"/></text>
+    <text x="604" y="446" font-size="11" font-weight="800" letter-spacing="1.2" fill="#4a5873">2026 · NOW</text>
+    <text x="604" y="463" font-size="13" font-weight="600" fill="#14213d">Forward Deployed Engineer &amp; AI Solution Architect</text>
   </g>
-  <g opacity="0">
-    <animate attributeName="opacity" dur="7.0s" fill="freeze" keyTimes="0;0.0286;0.0386;0.3286;0.3686;1" values="0;0;1;1;0;0"/>
-    <animateMotion dur="7.0s" fill="freeze" rotate="auto" calcMode="linear" keyTimes="0;0.0286;0.3286;1" keyPoints="0;0;1;1" path="M40.0 500.0 L470.0 500.0 L500.0 470.0 L500.0 466.0"/>
-    <rect x="-16" y="-8" width="32" height="16" rx="6" fill="#f5c400" stroke="#14213d" stroke-width="1.5"/>
-    <rect x="-10" y="-4" width="6" height="5" rx="1" fill="#14213d"/><rect x="-1" y="-4" width="6" height="5" rx="1" fill="#14213d"/>
-    <rect x="8" y="-4" width="5" height="5" rx="1" fill="#14213d"/>
+  <g opacity="0"><animate attributeName="opacity" dur="12.0s" repeatCount="indefinite" calcMode="linear" keyTimes="0.0000;0.0200;0.0250;0.4400;0.4450;1.0000" values="0;0;1;1;0;0"/><animateMotion dur="12.0s" repeatCount="indefinite" calcMode="spline" path="M40.0 500.0 L500.0 500.0 L530.0 470.0 L530.0 466.0" rotate="auto" keyTimes="0;0.0200;0.4400;1" keyPoints="0;0;1;1" keySplines="0 0 1 1;0.45 0 0.25 1;0 0 1 1"/>
+    <rect x="-17" y="-8" width="34" height="16" rx="6" fill="#f5c400" stroke="#14213d" stroke-width="1.5" filter="url(#glow)"/>
+    <rect x="-11" y="-4" width="6" height="5" rx="1" fill="#14213d"/><rect x="-2" y="-4" width="6" height="5" rx="1" fill="#14213d"/>
+    <circle cx="15" cy="0" r="3" fill="#fff"/>
   </g>
 </svg>
