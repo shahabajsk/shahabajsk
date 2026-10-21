@@ -433,7 +433,7 @@ def project_card(c: dict, kind: str) -> str:
                       ("unverified notes shipped", 0, c["ok"])]
         else:
             title, sub = "disruption-orchestrator", "14-state machine across CRM, reservations, payments, messaging"
-            series = [("bad drafts caught", 57, c["hold"]), ("retries absorbed", 9, "#6d5dfc"),
+            series = [("bad drafts caught", 62, c["hold"]), ("retries absorbed", 9, "#6d5dfc"),
                       ("invariant breaches", 0, c["ok"])]
         top = max(v for _, v, _ in series)
         loop = 8.0

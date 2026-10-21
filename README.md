@@ -24,7 +24,7 @@
       <a href="https://github.com/shahabajsk/disruption-orchestrator">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="card-orch-dark.svg">
-          <img alt="disruption-orchestrator: 14-state machine across CRM, reservations, payments and messaging. 57 bad drafts caught, 9 retries absorbed, 0 invariant breaches." src="card-orch-light.svg" width="100%">
+          <img alt="disruption-orchestrator: 14-state machine across CRM, reservations, payments and messaging. 62 bad drafts caught, 9 retries absorbed, 0 invariant breaches." src="card-orch-light.svg" width="100%">
         </picture>
       </a>
       <a href="https://github.com/shahabajsk/grounded-triage">

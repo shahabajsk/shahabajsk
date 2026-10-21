@@ -9,11 +9,11 @@
   <rect x="200" y="92" width="300.0" height="14" rx="7" fill="#e6a54a">
     <animate attributeName="width" dur="8.0s" repeatCount="indefinite" keyTimes="0;0.05;0.25;0.95;1" values="0;0;300.0;300.0;0"/>
   </rect>
-  <text x="510" y="103" font-size="13" font-weight="700" fill="#e6a54a">57</text>
+  <text x="510" y="103" font-size="13" font-weight="700" fill="#e6a54a">62</text>
   <text x="24" y="129" font-size="12.5" fill="#a3b0c6">retries absorbed</text>
   <rect x="200" y="118" width="300" height="14" rx="7" fill="#213152"/>
-  <rect x="200" y="118" width="47.36842105263158" height="14" rx="7" fill="#6d5dfc">
-    <animate attributeName="width" dur="8.0s" repeatCount="indefinite" keyTimes="0;0.17;0.37;0.95;1" values="0;0;47.36842105263158;47.36842105263158;0"/>
+  <rect x="200" y="118" width="43.54838709677419" height="14" rx="7" fill="#6d5dfc">
+    <animate attributeName="width" dur="8.0s" repeatCount="indefinite" keyTimes="0;0.17;0.37;0.95;1" values="0;0;43.54838709677419;43.54838709677419;0"/>
   </rect>
   <text x="510" y="129" font-size="13" font-weight="700" fill="#6d5dfc">9</text>
   <text x="24" y="155" font-size="12.5" fill="#a3b0c6">invariant breaches</text>
