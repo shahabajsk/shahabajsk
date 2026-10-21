@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 290" width="960" height="290" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#9aa6b8"/></marker>
+    <marker id="h" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8z" fill="#a15c00"/></marker>
+  </defs>
+  <rect width="960" height="290" rx="12" fill="#f3f5f7"/>
+  <text x="70" y="88" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-weight="700" fill="#14213d">Shahabaj Sheikh</text>
+  <text x="70" y="126" font-size="19" fill="#4a5873">Forward-deployed AI engineer. I take agentic systems from discovery to production</text>
+  <text x="70" y="152" font-size="19" fill="#4a5873">inside enterprises where a wrong answer has a cost.</text>
+  <line x1="70" y1="172" x2="890" y2="172" stroke="#9aa6b8" stroke-width="1"/>
+  <rect x="70" y="196" width="92" height="32" rx="16" fill="none" stroke="#4a5873" stroke-width="1.5"/>
+  <text x="116" y="217" text-anchor="middle" font-size="13" fill="#4a5873">intake</text>
+  <line x1="162" y1="212" x2="190" y2="212" stroke="#9aa6b8" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="190" y="196" width="92" height="32" rx="16" fill="none" stroke="#4a5873" stroke-width="1.5"/>
+  <text x="236" y="217" text-anchor="middle" font-size="13" fill="#4a5873">gather</text>
+  <line x1="282" y1="212" x2="310" y2="212" stroke="#9aa6b8" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="310" y="196" width="92" height="32" rx="16" fill="none" stroke="#4a5873" stroke-width="1.5"/>
+  <text x="356" y="217" text-anchor="middle" font-size="13" fill="#4a5873">classify</text>
+  <line x1="402" y1="212" x2="430" y2="212" stroke="#9aa6b8" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="430" y="196" width="92" height="32" rx="16" fill="none" stroke="#4a5873" stroke-width="1.5"/>
+  <text x="476" y="217" text-anchor="middle" font-size="13" fill="#4a5873">draft</text>
+  <line x1="522" y1="212" x2="550" y2="212" stroke="#9aa6b8" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="550" y="196" width="92" height="32" rx="16" fill="none" stroke="#4a5873" stroke-width="1.5"/>
+  <text x="596" y="217" text-anchor="middle" font-size="13" fill="#4a5873">verify</text>
+  <line x1="642" y1="212" x2="670" y2="212" stroke="#9aa6b8" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="670" y="196" width="92" height="32" rx="16" fill="none" stroke="#4a5873" stroke-width="1.5"/>
+  <text x="716" y="217" text-anchor="middle" font-size="13" fill="#4a5873">decide</text>
+  <path d="M596 228 C 590 258, 482 258, 476 230" fill="none" stroke="#a15c00" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#h)"/>
+  <text x="536" y="268" text-anchor="middle" font-size="11" fill="#a15c00">rejected, retry</text>
+  <rect x="790" y="196" width="92" height="32" rx="16" fill="#1f7a5c"/>
+  <text x="836" y="217" text-anchor="middle" font-size="13" font-weight="600" fill="#f3f5f7">0 fabricated</text>
+  <line x1="762" y1="212" x2="786" y2="212" stroke="#9aa6b8" stroke-width="1.5" marker-end="url(#a)"/>
+</svg>
